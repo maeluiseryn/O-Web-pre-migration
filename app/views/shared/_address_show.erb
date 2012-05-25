@@ -1,0 +1,23 @@
+
+<div class="span-16 box">
+<div class='span-15'>
+<h4><b><%=address.description%></b></h4></div>
+
+<div class="span-4">
+ <b>Rue    : </b><%=address.street%><br/>
+ <b>Code postal: </b><%=address.zip%>
+</div>
+<div class='span-4'>
+  <b>Numero : </b><%=address.street_number%><br/>
+  <b>Ville : </b><%=address.city%>
+</div>
+<div class="span-3">
+<b>Etage  :</b><%= address.floor %><br/>
+<b>Pays : </b><%=address.country%>
+</div>
+<div class='span-4'>
+<%=link_to_external address.format_url_for_google_maps,"Trouver sur Google-Maps"%>
+ <%=link_to_external address.format_url_for_mappy_maps,"Trouver sur Mappy"%></div>
+</div>
+
+ <%#link_to_external address.format_url_for_mappy_itinerary("Bruxelles,+1050,+rue du sceptre,+85,+belgique"),"Trouver sur Mappy"%>

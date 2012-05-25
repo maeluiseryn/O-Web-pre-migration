@@ -1,0 +1,20 @@
+<div style="min-height:50px"><h1 >Liste des projets</h1></div>
+
+<hr>
+<%= will_paginate :previous_label=>'&larr; Précédent',:next_label=>'Suivant &rarr;' %>
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Project Ref</th>
+    <th>Etat</th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <%=render :partial =>'project_list', :object=>project ,:as=>:project %>
+<% end %>
+</table>
+<%= will_paginate :previous_label=>'&larr; Précédent',:next_label=>'Suivant &rarr;' %>
+<br />
+
+

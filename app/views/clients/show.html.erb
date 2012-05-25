@@ -1,0 +1,112 @@
+
+<div id="first_content">
+<div class='span-18'>
+
+  <h2><%=" #{@client.titre} #{@client.surname.capitalize} #{@client.name}" %></h2>
+
+  <br/>
+</div>
+  <hr>
+<div class="span-8">
+<p>
+<b>Type de Client:</b>
+ <%= @client.client_type %>
+   </p>
+<% if !@client.society.nil? %>
+  <p>
+  <b>Societé:</b>
+ <%= @client.society %>
+   </p>
+<% end %>
+
+<p>
+  <b>Disponibilité:</b>
+ <%= @client.disponibility %>
+</p>
+
+<p>
+<b>Reference:</b>
+  <%= @client.reference %>
+</p>
+</div>
+<div class="span-8" >
+<p><b>Informations financiaires:</b></p>  
+<p><b>Numero de T.V.A  : </b><%=@client.financial_data.tva_number%></p>
+<p><b>Taux de T.V.A    : </b><%=@client.financial_data.tva_rate%></p>
+<p><b>Compte en Banque :</b><%=@client.financial_data.bank_account %></p>
+
+</div>
+</div>
+<hr>
+
+
+
+   <h4><b>Adresse de facturation:  </b></h4>
+  <table>
+   <%= if !@client.addresses.empty? then render :partial => "shared/address_show" ,:collection=> @client.addresses ,:as=>:address end%>
+  </table>
+
+
+
+<div class='span-17'>
+  <hr>
+<h4><b>Informations de contact:  </b></h4>  
+
+<table>
+ <thead>
+
+           <th>Description</th>
+           <th>Type de contact</th>
+           <th>Donnée de contact</th>
+
+
+         </thead>
+  <%= if !@client.contacts.empty? then render :partial => "shared/contact_list", :collection => @client.contacts ,:as=>:contact end%>
+  </table>
+</div>
+
+<div id="projects" class="span-17">
+<hr>
+  <h4><b>Projets du client:  </b></h4>
+<table id="projects_table" class="tablesorter"> 
+   <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+   </thead>
+<%=render :partial=> 'projects/project_list',:collection => @client.projects ,:as=>:project unless @client.projects.empty?%>
+  </table>
+</div>
+
+<% content_for :sidebar do %>
+<div id="vertmenu">
+      <ul id="sidebarmenu1">
+
+        <li>
+<%= link_to 'Nouveau Projet ' ,new_client_project_path(@client.id)%>
+       </li>
+
+<%#= link_to 'Activer Client', client_change_state_path(@client) %>
+
+        <li>
+<%= link_to 'Modifier le client', edit_client_path(@client) %>
+       </li>
+        <li>
+<%= link_to 'Retour', clients_path %>
+       </li> 
+       </ul>
+    </div>
+<% end%>
+
+
+
+
+
+
+
+

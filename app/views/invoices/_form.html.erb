@@ -1,0 +1,31 @@
+<%= form_for(@invoice) do |f| %>
+  <% if @invoice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@invoice.errors.count, "error") %> prohibited this invoice from being saved:</h2>
+
+      <ul>
+      <% @invoice.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <p>
+    <%= f.label "Montant de la facture" %><br />
+    <%= f.text_field :total_sum,:size=>23 %>€
+    </p>
+  </div>
+  <div class="field">
+    <p>
+    <%= f.label :due_date,'Echeance' %><br />
+    <%= f.date_select :due_date %>
+    </p>
+  </div>
+   <%=  f.hidden_field :project_id , :value => @invoice.project_id%>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

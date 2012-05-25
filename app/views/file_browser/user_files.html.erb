@@ -1,0 +1,10 @@
+<%= javascript_include_tag 'file_browser' %>
+<%= stylesheet_link_tag 'list',  :media => 'screen' %>
+<input type="button" value="Upload a File" id="toggle_upload_file_input">
+<input type="button" value="Create a Directory" id="toggle_create_directory_input">
+<%= render :partial => 'upload_file_form' %>
+<%= render :partial => 'create_directory_form' %>
+
+<%= render :partial => '_breadcrumb' %>
+<%= render :partial => '_file_browser_content' %>
+

@@ -1,0 +1,12 @@
+<tr>
+     <td><%= uploaded.id %></td>
+     <td><%=  link_to "Download #{uploaded.filename}", :controller=>'files',:action => 'download' ,:id =>uploaded %></td>
+
+      <!--<td><%# uploaded.file_url %></td>-->
+     <td><%= content_type_img(uploaded) %></td>
+     <td><%= number_to_human_size(uploaded.file_size) %></td>
+     <td><%= file_associated_with(uploaded)%></td>
+     <td><a rel="<%= is_image?(uploaded) %>" href="<%= uploaded.file_url unless is_image?(uploaded)!='image' %>">
+      <%= image_tag('image-x-generic.png') unless is_image?(uploaded)!= 'image' %>  </a> </td>
+    <td><%= link_to 'Detruire', file_path(uploaded), :confirm => 'Êtes-vous sûre?', :method => :delete %></td>
+</tr>

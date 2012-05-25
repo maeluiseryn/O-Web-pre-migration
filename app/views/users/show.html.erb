@@ -1,0 +1,217 @@
+
+
+<div id="first_content" class="span-18">
+
+
+<div  class="span-18">  <h2>Page d'acceuil de <%= @user.name.capitalize %></h2><hr></div>
+
+<div  class="span-12"><br/><p><b>Etat de l'utilisateur:</b> <%= @user.aasm_current_state %>
+</p>
+
+
+<b>Projets actifs :</b>
+<ul style="list-style-type: none;">
+  <li><%=link_to_function("Offre(#{size_collection @user.projects.offer} )"," $('#offer_table').toggle();
+  ")unless @user.projects.offer.empty?%></li>
+  <li><%=link_to_function("En attente de paiement(#{size_collection @user.projects.waiting_payment})"," $('#waiting_payment_table').toggle();")unless @user.projects.waiting_payment.empty?%></li>
+  <li><%=link_to_function("Production(#{size_collection @user.projects.production})"," $('#production_table').toggle();")unless @user.projects.production.empty?%></li>
+  <li> <%=link_to_function("Placement(#{size_collection @user.projects.placement})"," $('#placement_table').toggle();")unless @user.projects.placement.empty?%></li>
+  <li><%=link_to_function("Service après-vente(#{size_collection @user.projects.after_sales_service})"," $('#after_sales_service_table').toggle();")unless @user.projects.after_sales_service.empty?%></li>
+</ul>
+<p><b><%=link_to_function("Clients(#{size_collection @user.clients})"," $('#clients_table').toggle();") unless @user.clients.empty?%></b></p>
+<p><b><%=link_to_function("Fichiers(#{size_collection @user.uploaded_files})"," $('#files_table').toggle();")unless @user.uploaded_files.empty? %></b></p>
+</div>
+<div class='span-5 last box' id="message" style="min-height: 100px">
+ <% if @user.message_box.nil? %>
+  <p> Boîte a message pas encore créée</p>
+  <%else%>
+  <p><b><%=(link_to 'Boite à Message: ',message_box_path(@user.message_box.id )) %> </b></p>
+  <ul style="list-style-type: none;":>
+  <li>Messages non lus (<%=unread_count @user.message_box.comments%>)</li>
+  <li>Messages lus (<%=read_count @user.message_box.comments%>)</li>
+  <li>Messages à archiver (<%=to_archive_count @user.message_box.comments%>)</li>
+  <li>Messages dans la corbeille (<%=to_delete_count @user.message_box.comments%>)</li>
+
+</ul>
+<% end %>
+
+
+</div>
+</div>
+
+ 
+
+     <div id="clients_table" style="display:none">
+       <hr>
+      <h4><b>Clients :</b></h4>
+       <table class="span-18">
+       <tr>
+    <thead>
+    <th>Titre</th>
+    <th>Prénom</th>
+    <th>Nom</th>
+    <th>Reference</th>
+    <th>Type de client</th>
+    <th>Entreprise</th>
+
+    <th>Etat du client</th>
+    <th></th>
+    <th></th>
+    <th></th>
+
+    </thead>
+        <%=render :partial=> 'clients/client_list',:collection => @user.clients ,:as=>:client %>
+       </table>
+
+     </div>
+
+     <div id="offer_table" style="display:none">
+       <hr>
+       <h4><b>Projets en phase d'offre:</b></h4>
+       <table class="span-18">
+
+         <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </thead>
+        <%=render :partial=> 'projects/project_list',:collection => @user.projects.offer ,:as=>:project %>
+       </table>
+     </div>
+    <div id="waiting_payment_table" style="display:none">
+       <hr>
+       <h4><b>Projets en attente de paiement:</b></h4>
+       <table class="span-18">
+
+         <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </thead>
+        <%=render :partial=> 'projects/project_list',:collection => @user.projects.waiting_payment ,:as=>:project %>
+       </table>
+     </div>
+   <div id="production_table" style="display:none">
+       <hr>
+       <h4><b>Projets en production:</b></h4>
+       <table class="span-18">
+
+         <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </thead>
+        <%=render :partial=> 'projects/project_list',:collection => @user.projects.production ,:as=>:project %>
+       </table>
+     </div>
+   <div id="placement_table" style="display:none">
+       <hr>
+       <h4><b>Projets en phase de placement:</b></h4>
+       <table class="span-18">
+
+   <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </thead>
+        <%=render :partial=> 'projects/project_list',:collection => @user.projects.placement ,:as=>:project %>
+       </table>
+     </div>
+   <div id="after_sales_service_table" style="display:none">
+       <hr>
+       <h4><b>Projets en service après-vente:</b></h4>
+       <table class="span-18">
+
+           <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </thead>
+        <%=render :partial=> 'projects/project_list',:collection => @user.projects.after_sales_service ,:as=>:project %>
+       </table>
+
+     </div>
+  <div id="files_table" style="display:none">
+     <hr>
+     <h4><b>Fichiers:</b></h4>
+    <table class="span-18">
+<tr>
+              <thead>
+              <th></th>
+              <th>Nom du Fichier</th>
+              <th>Type de Fichier</th>
+              <th>Taille du Fichier</th>
+              <th>Propriétaire du Fichier</th>
+              <th>SlideShow</th>
+              <th></th>
+
+              </thead>
+     <%= render :partial => 'files/show_file' ,:collection => @user.uploaded_files ,:as=>:uploaded%>
+
+   </table>
+ </div> 
+
+
+
+
+<% content_for :sidebar do %>
+<div id="vertmenu">
+      <ul id="sidebarmenu1">
+
+        <li><%= #noinspection RubyArgCountlink_to 'Profile',user_user_profiles_path(@user)
+            profile_show_or_create_link @user %>
+         </li>
+       <li>
+
+           <%=  link_to 'Uploader un fichier', upload_files_path(:format=>:js),:remote=>true%>
+         </li>
+         <li>
+           <%= link_to'Explorer les fichiers' ,user_files_path%>
+         </li>
+
+
+
+        <li><%= #noinspection RubyArgCountlink_to 'Profile',user_user_profiles_path(@user)
+            (link_to 'Boîte à message ',message_box_path(@user.message_box.id ))unless @user.message_box.nil? %>
+         </li>
+        <% if current_user.admin? %>
+
+
+        <li><%= link_to (if @user.active? || @user.admin? then 'Désactiver utilisateur' else 'Activer utilisateur' end), deactivate_user_path(@user) %>
+         </li>
+         <%if !@user.inactive?%>
+        <li><%= link_to ( if @user.active? then 'Activer administrateur' else 'Désactiver administrateur' end), admin_user_path(@user) %>
+         </li>
+         <% end %>
+        <li>
+           <%= link_to 'Retour à la liste des utilisateurs', users_path %>
+         </li>
+         <% end%>
+</ul>
+</div>
+<% end %>

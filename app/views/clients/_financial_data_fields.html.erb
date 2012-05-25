@@ -1,0 +1,8 @@
+<fieldset>
+  <%= f.label :tva_number ,'N° de TVA' %><br>
+  <%= f.text_field :tva_number %><br>
+  <%= f.label :tva_rate , 'Taux de TVA'%><br>
+  <%= f.select :tva_rate, get_tva_rate  %><br>
+  <%= f.label :bank_account,'Numero de compte' %><br>
+  <%= f.text_field :bank_account %><br>
+</fieldset>

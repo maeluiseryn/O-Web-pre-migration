@@ -1,0 +1,171 @@
+
+
+<div class="span-18" style="min-height:75px">
+  <h2>Boîte à message de
+  <b><%= @message_box.description.capitalize %></b></h2>
+
+
+</div>
+
+<% if !@message_box.comments.empty? %>
+<% if @message_box.box_type=='user_box' %>
+<b>Messages:</b>
+<ul style="list-style-type: none;":>
+  <li><%=link_to_function("Messages non-lus (#{unread_count @message_box.comments} )"," $('#unread_table').toggle();
+  ") unless (unread_count @message_box.comments)==0 %></li>
+  <li><%=link_to_function("Messages lus (#{read_count @message_box.comments})"," $('#read_table').toggle();") unless ((read_count @message_box.comments)==0) %></li>
+  <li><%=link_to_function("Messages à archiver (#{to_archive_count @message_box.comments})"," $('#archive_table').toggle();") unless ((to_archive_count @message_box.comments)==0)%></li>
+  <li> <%=link_to_function("Messages dans la corbeille(#{to_delete_count @message_box.comments})"," $('#trash_table').toggle();") unless (to_delete_count @message_box.comments)==0 %></li>
+  <li><%=link_to_function("Messages envoyés par l'utilisateur(#{size_collection @message_box.box_owner.comments})"," $('#sent_table').toggle();") unless (size_collection @message_box.box_owner.comments)==0%></li>
+</ul>
+<%else%>
+<%= javascript_tag "$(document).ready(function(){
+  $('#project_msg_table').show();
+});" %>          
+<%end%>
+<hr>
+
+<div id="unread_table" style="display:none">
+<h4><b>Messages non-lus:</b></h4>
+<table>
+
+ <thead>
+    <th>Message de</th>
+    <th>Sujet</th>
+    <th>Date de création</th>
+    <th>Etat</th>
+
+    <th></th>
+    <th></th>
+
+</thead>
+<%=render :partial=>'comments/comment_list', :collection=>@message_box.comments.unread ,:as=>:comment%>
+</table>
+</div>
+<div id="read_table" style="display:none">
+  <h4><b>Messages lus:</b></h4>
+<table>
+
+ <thead>
+    <th>Message de</th>
+    <th>Sujet</th>
+    <th>Date de création</th>
+    <th>Etat</th>
+
+    <th></th>
+    <th></th>
+
+</thead>
+
+<%=render :partial=>'comments/comment_list', :collection=>@message_box.comments.read ,:as=>:comment%>
+</table>
+</div>
+<div id="archive_table" style="display:none">
+  <h4><b>Messages a archiver:</b></h4>
+<table>
+
+ <thead>
+    <th>Message de</th>
+    <th>Sujet</th>
+    <th>Date de création</th>
+    <th>Etat</th>
+
+    <th></th>
+    <th></th>
+
+</thead>
+<%=render :partial=>'comments/comment_list', :collection=>@message_box.comments.archive ,:as=>:comment%>
+</table>
+</div>
+<div id="trash_table" style="display:none">
+  <h4><b>Messages à la corbeille:</b></h4>
+<table>
+
+ <thead>
+    <th>Message de</th>
+    <th>Sujet</th>
+    <th>Date de création</th>
+    <th>Etat</th>
+
+    <th></th>
+    <th></th>
+
+</thead>
+<%=render :partial=>'comments/comment_list', :collection=>@message_box.comments.mark_for_delete ,:as=>:comment%>
+</table>
+</div>
+<% if @message_box.box_type=='user_box' %>
+<div id="sent_table" style="display:none">
+  <h4><b>Messages envoyés:</b></h4>
+<table>
+
+ <thead>
+    <th>Message de</th>
+    <th>Sujet</th>
+    <th>Date de création</th>
+    <th>Etat</th>
+
+    <th></th>
+    <th></th>
+
+</thead>
+<%=render :partial=>'comments/comment_list', :collection=>@message_box.box_owner.comments ,:as=>:comment%>
+</table>
+</div>
+<% end %>
+<div id="project_msg_table" style="display:none">
+  <h4><b>Messages du projet:</b></h4>  
+<table>
+
+ <thead>
+    <th>Message de</th>
+    <th>Sujet</th>
+    <th>Date de création</th>
+    <th>Etat</th>
+
+    <th></th>
+    <th></th>
+
+</thead>
+<%=render :partial=>'comments/comment_list', :collection=>@message_box.comments.project_message ,:as=>:comment%>
+</table>
+</div>
+<%else%>
+ <hr>
+<div class="span-10">
+
+
+ <h3 align="right">
+   Boite à message Vide.</h3>
+</div>
+
+
+<%end%>
+<% content_for :sidebar do %>
+  <div id="vertmenu">
+      <ul id="sidebarmenu1">
+
+        <li>
+         <%= link_to 'Nouveau message', new_message_box_comment_path(@message_box) %>
+       </li>
+       <%if correct_current_user_message_box(@message_box)  %>
+        <li>
+         <%= link_to 'Archiver', archive_yml_comments_path(@message_box)  %>
+       </li>
+
+       <li>
+         <%= link_to 'Vider Corbeille', delete_trashed_comments_path(@message_box) %>
+       </li>
+        <%end%>
+        <li>
+         <%=  redirect_back_to_owner_polymorphic(@message_box) %>
+       </li>
+
+
+       </ul>
+  </div>
+<% end%>
+
+
+
+

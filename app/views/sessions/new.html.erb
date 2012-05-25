@@ -1,0 +1,19 @@
+<div id="sign_in_box">
+<%= form_for(:session, :url => sessions_path) do |f| %>
+<fieldset id="sign_in">
+<legend id="sign_in_legend" >Login</legend>
+<div class="field">
+<%= f.label :email %><br />
+<%= f.text_field :email , :size=>20 %>
+</div>
+<div class="field">
+<%= f.label :password %><br />
+<%= f.password_field :password , :size=>20%>
+</div>
+<div class="actions">
+<%= f.submit "Sign in" %>
+</div>
+</fieldset>
+<% end %>
+
+</div>

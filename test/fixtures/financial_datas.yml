@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tva: MyString
+  bank_account: MyString
+  activity_sector: MyString
+  financial_quality: MyString
+
+two:
+  tva: MyString
+  bank_account: MyString
+  activity_sector: MyString
+  financial_quality: MyString

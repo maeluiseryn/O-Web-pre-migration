@@ -1,0 +1,293 @@
+--- 
+- !ruby/object:Project 
+  attributes: 
+    id: "1"
+    created_at: 2011-04-11 12:27:10.48877
+    updated_at: 2011-04-11 12:27:10.741505
+    client_id: "2"
+    project_state: created
+    project_ref: "1"
+    home_directory: /data/clients/c2-cuic uic-11-4/p1
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "2"
+    created_at: 2011-04-11 12:48:18.6415
+    updated_at: 2011-04-11 12:48:18.95074
+    client_id: "4"
+    project_state: created
+    project_ref: "1"
+    home_directory: /data/clients/c4-einstein-11-4/p1
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "3"
+    created_at: 2011-04-11 13:33:52.815772
+    updated_at: 2011-04-11 13:33:53.277757
+    client_id: "1"
+    project_state: created
+    project_ref: "1"
+    home_directory: /p1
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "4"
+    created_at: 2011-04-11 13:40:50.767587
+    updated_at: 2011-04-11 13:40:51.172415
+    client_id: "1"
+    project_state: created
+    project_ref: "2"
+    home_directory: /p2
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "5"
+    created_at: 2011-04-11 13:42:15.824993
+    updated_at: 2011-04-11 13:42:16.421418
+    client_id: "1"
+    project_state: created
+    project_ref: "3"
+    home_directory: /p3
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "6"
+    created_at: 2011-04-11 13:45:28.236839
+    updated_at: 2011-04-11 13:45:28.878924
+    client_id: "1"
+    project_state: created
+    project_ref: "4"
+    home_directory: /p4
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "7"
+    created_at: 2011-04-11 13:47:14.226326
+    updated_at: 2011-04-13 15:43:15.160378
+    client_id: "5"
+    project_state: close
+    project_ref: "1"
+    home_directory: /data/clients/c5-po-11-4/p1
+    project_type: Projet standard
+    remark: 
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "9"
+    created_at: 2011-04-13 15:43:42.531658
+    updated_at: 2011-04-13 15:43:43.251116
+    client_id: "5"
+    project_state: created
+    project_ref: "2"
+    home_directory: /data/clients/c5-po-11-4/p2
+    project_type: Standard
+    remark: ""
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "11"
+    created_at: 2011-04-14 13:26:28.044464
+    updated_at: 2011-04-14 13:36:30.355327
+    client_id: "9"
+    project_state: close
+    project_ref: "1"
+    home_directory: /data/clients/c9-charles/p
+    project_type: Standard
+    remark: ""
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "13"
+    created_at: 2011-04-14 13:46:31.162491
+    updated_at: 2011-04-14 14:39:51.041955
+    client_id: "11"
+    project_state: waiting_payment
+    project_ref: "1"
+    home_directory: /data/clients/c11-lembuche/p
+    project_type: Standard
+    remark: |
+      hello 
+      
+      Remarque ajoutee: hello world
+      
+       Ajout: hello world
+
+    project_price: "120001"
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "12"
+    created_at: 2011-04-14 13:35:42.936187
+    updated_at: 2011-04-15 09:49:34.368118
+    client_id: "9"
+    project_state: waiting_payment
+    project_ref: "2"
+    home_directory: /data/clients/c9-charles/p
+    project_type: Standard
+    remark: ""
+    project_price: "1056.2"
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "10"
+    created_at: 2011-04-14 13:19:52.014311
+    updated_at: 2011-04-15 10:30:23.111785
+    client_id: "5"
+    project_state: active
+    project_ref: "3"
+    home_directory: /data/clients/c5-po-11-4/p3
+    project_type: Standard
+    remark: ""
+    project_price: "1000"
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Project 
+  attributes: 
+    id: "14"
+    created_at: 2011-04-15 10:41:56.451845
+    updated_at: 2011-04-15 10:44:17.747759
+    client_id: "11"
+    project_state: offer
+    project_ref: "2"
+    home_directory: /data/clients/c11-lembuche/p
+    project_type: Standard
+    remark: ""
+    project_price: 
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  persisted: true
+  previously_changed: {}
+
+  readonly: false

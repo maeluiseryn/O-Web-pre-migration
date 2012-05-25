@@ -1,0 +1,9 @@
+<div id="create_directory_input" style="display: none">
+<%= form_tag  create_dir_file_browser_path ,:id=>"new_dir" do%>
+  <input type="hidden" name="new_dir[path]" value="<%= @current_url %>" />
+  <h2>Créer un dossier</h2>
+  <%=label 'new_dir' , 'Directory name' %>
+  <%= text_field 'new_dir', 'name' %>
+  <%= submit_tag "Create" %>
+<% end%>
+</div>

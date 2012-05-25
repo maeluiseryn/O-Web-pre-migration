@@ -1,0 +1,9 @@
+<div>
+<h1>Uploader un Fichier</h1>
+<%= form_tag  post_upload_path ,
+                        :multipart => true do %>
+<%=session[:model_name]   %>
+<p><label for="post_upload">Choisir un fichier</label> :
+<%= file_field 'post_upload', 'datafile' %></p>
+<%= submit_tag "Envoyer" %>
+<% end %></div>

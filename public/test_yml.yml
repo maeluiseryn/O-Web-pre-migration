@@ -1,0 +1,6 @@
+--- 
+:test: 
+  :cat1: 
+    :sub_cat1_1: c
+    :sub_cat1_2: d
+  :cat2: b

@@ -1,0 +1,12 @@
+<tr>
+  <td><%= project_action.description %></td>
+  <td><%= project_action.action_type %></td>
+  <td><%= project_action.user.name %></td>
+  <td><%= project_action.action_result %></td>
+  <td><%= project_action.action_state %></td>
+  <td><%= project_action.project.project_ref_string %></td>
+  <td><%= project_action.project_state %></td>
+  <td><%= link_to 'Voir', project_action %></td>
+  <td><%= link_to 'Modifier', edit_project_action_path(project_action) unless project_action.action_state!='open'%></td>
+  <td><%= (link_to 'Detruire', project_action, :confirm => 'Etes-vous sûre?', :method => :delete)unless project_action.action_state!='open' %></td>
+</tr>

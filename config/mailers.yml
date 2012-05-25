@@ -1,0 +1,116 @@
+---
+development:
+  test:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    domain: gmail.com
+    authentication: plain
+    user_name: n0st4lg1af0r1nf1n1ty@gmail.com
+    password: maeluiseryn
+  Nicolas:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: onlywoodnoreply@gmail.com
+    password: onlywood
+  sophie:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    domain: gmail.com
+    authentication: plain
+    user_name: onlywoodnoreply@gmail.com
+    password: onlywood
+production:
+  Nicolas:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: onlywoodnoreply@gmail.com
+    password: onlywood
+  kether:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: 4ins0ph4urk3th3r@gmail.com
+    password: razorback666
+    type: sender
+  chockmah:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: 41ns0ph4urch0ckm4h@gmail.com
+    password: razorback666
+    type: sender
+  binah:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: 4ins0ph4urb1n4h@gmail.com
+    password: razorback666
+    type: sender
+  chesed:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: 4ins0ph4urch3s3d@gmail.com
+    password: razorback666
+    type: sender
+  geburah:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: 4ins0ph4urg3bur4h@gmail.com
+    password: razorback666
+    type: sender
+  daath:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: 4ins0ph4urd44th@gmail.com
+    password: razorback666
+    type: sender
+  ow:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    host: imap.gmail.com
+    port_imap: 993
+    domain: gmail.com
+    authentication: plain
+    user_name: onlywoodnoreply@gmail.com
+    password: onlywood
+    type: receiver

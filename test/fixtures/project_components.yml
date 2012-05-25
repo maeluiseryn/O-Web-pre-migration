@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  component_type: MyString
+  component_matter: MyString
+  number_of_component: 1
+  project_id: 1
+  component_info: MyString
+
+two:
+  component_type: MyString
+  component_matter: MyString
+  number_of_component: 1
+  project_id: 1
+  component_info: MyString

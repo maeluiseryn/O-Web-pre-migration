@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title><%="Email envoyé par #{@email.sender_name}" %></title>
+</head>
+<body>
+<p>
+<%=@email.content%>
+</p>
+<p>
+Piece jointe: <%=@file.original_filename.gsub(/[^a-z0-9]+/i,'-') unless @file.nil?%>
+</p>
+</body>
+</html>

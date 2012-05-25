@@ -1,0 +1,7 @@
+<ul id="breadcrumb">
+  <% @breadcrumb.each do |crumb| %>
+
+      <li>/<a href="<%= url_for piece_jointes_path :dir => crumb[:url] %>" title="Go to '<%= crumb[:name] %>' folder"><%= crumb[:name] %></a></li>
+
+  <% end %>
+</ul>

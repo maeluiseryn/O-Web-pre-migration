@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  genre: MyString
+  contact_data: MyString
+
+two:
+  description: MyString
+  genre: MyString
+  contact_data: MyString

@@ -1,0 +1,8 @@
+<h3>Demande de support</h3>
+<p>Envoyé par: <%=@sender.sender_name%></p>
+<p>Email de contact: <%=@sender.email%></p>
+<p>Type de demande: <%=@sender.support_type%></p>
+<p>Description :</p>
+<p><%=@sender.new_line_in_content %></p>
+<br>
+<p>Emise le <%=I18n.l(Time.now)%></p>

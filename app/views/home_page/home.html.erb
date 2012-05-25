@@ -1,0 +1,25 @@
+<h1>Page d'acceuil utilisateur</h1>
+
+<h3><u> Connecté en tant que : </u><b><%= current_user.name %></b></h3>
+
+<% content_for :sidebar do %>
+<div id="vertmenu">
+      <ul id="sidebarmenu1">
+
+         <li>
+           <%= #noinspection RubyArgCount
+            link_to 'Nouveau client', new_client_path %>
+         </li>
+         <li><%= #noinspection RubyArgCountlink_to 'Profile',user_user_profiles_path(@user)
+            link_to 'Rechercher', search_new_search_path %>
+         </li>
+         <li><%= #noinspection RubyArgCountlink_to 'Profile',user_user_profiles_path(@user)
+            link_to 'Envoyé mail', custom_mail_path %>
+         </li>
+        <li><%= #noinspection RubyArgCountlink_to 'Profile',user_user_profiles_path(@user)
+            link_to 'Envoyé mail avec piece-jointe serveur', piece_jointes_path %>
+         </li>
+</ul>
+</div>
+<% end %>
+

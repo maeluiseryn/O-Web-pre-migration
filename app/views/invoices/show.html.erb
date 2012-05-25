@@ -1,0 +1,99 @@
+<div class="span-18" style="min-height:50px">
+<h2>Facture numero: <%= @invoice.invoice_num%></h2>
+
+</div>
+<hr>
+<div class="span-18">
+<div class="span-6">
+<p>
+ <b>Client:</b>
+ <%=link_to("#{@invoice.project.client.surname.capitalize} #{@invoice.project.client.name}" ,client_path(@invoice.project.client_id))%>
+
+</p>
+<p>
+  <b>Reference projet:</b>
+  <%=link_to @invoice.project.project_ref_string,project_path(@invoice.project_id) %>
+</p>
+</div>
+<div class="span-5">
+<p>
+  <b>Somme totale:</b>
+  <%= @invoice.total_sum %>€
+</p>
+
+
+<p>
+  <b>Solde restant:</b>
+  <%= @invoice.remaining_sum %>€
+</p>
+</div>
+<div class="span-6">
+<p>
+  <b>Date de création:</b>
+  <%=I18n.l(@invoice.created_at)  %>
+</p>
+
+<p>
+
+  <b>Echeance de la facture:</b>
+  <%= @invoice.due_date %>
+</p>
+</div>
+<div class="span-15">
+  <br/>
+  <h3><b>Etat de la facture:</b>
+  <%= @invoice.aasm_current_state %>
+</h3>
+</div>
+</div>
+<hr>
+<h3>Paiements de <%= @invoice.invoice_ref%></h3>
+<% if @invoice.payments.empty? %>
+<p align="center"><b>Aucun paiement effectué</b></p>
+<%else%>    
+<div id="payments_table">
+<table>
+  <thead>
+    <th>
+      ref facture
+    </th>
+    <th>
+      Somme payée
+    </th>
+    <th>
+      Créé le
+    </th>
+    <th>
+
+    </th>
+  </thead>
+  <%= render :partial => 'payment_list' ,:collection=>@invoice.payments ,:as=>:payment %>
+</table>
+</div>
+<%end%>
+<% content_for :sidebar do %>
+  <div id="vertmenu">
+      <ul id="sidebarmenu1">
+      <% if @invoice.aasm_current_state!=:paid %>
+        <li>
+          <%= link_to 'Nouveau paiement', new_payments_path(@invoice,:format=>:js),:remote=>true %>
+       </li>
+
+       <li>
+         <%= link_to 'Générer document facture', facture_path(@invoice) %>
+       </li>
+        <li>
+         <%= link_to 'Modifier', edit_invoice_path(@invoice) %>
+       </li>
+       <% end%>
+        <li>
+         <%= link_to 'Retour', project_invoices_path(@invoice.project_id) %>
+       </li>
+       </ul>
+  </div>
+<% end%>
+
+ 
+
+
+

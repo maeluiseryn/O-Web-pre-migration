@@ -1,0 +1,8 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+db/sphinx/**/*
+public/sphinx/data/users/*
+public/sphinx/data/clients/*
+public/sphinx/data/uploads/*

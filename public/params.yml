@@ -1,0 +1,8 @@
+--- 
+:test: 
+  :recipient: 
+    :email_addr: nicolas@onlywood.be
+  :attck_params: 
+    :nb_end: "10"
+    :keyword: burn in hell
+    :sender_code: kether

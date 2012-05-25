@@ -1,0 +1,26 @@
+
+<tr>
+<td>
+<%=address.description%>
+</td>
+  <td>
+<%=address.street_number%>
+  </td>
+  <td>
+<%=address.street%>
+  </td>
+  <td>
+<%= address.floor %>
+  </td>
+  <td>
+<%=address.zip%>
+  </td>
+  <td>
+<%=address.city%>
+  </td>
+  <td>
+ <%=link_to_external address.format_url_for_google_maps,"Trouver sur Google-Maps"%></td>
+  <td>
+ <%=link_to_external address.format_url_for_mappy_maps,"Trouver sur Mappy"%>
+</td>  <%#link_to_external address.format_url_for_mappy_itinerary("Bruxelles,+1050,+rue du sceptre,+85,+belgique"),"Trouver sur Mappy"%>
+</tr>

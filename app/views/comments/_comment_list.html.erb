@@ -1,0 +1,10 @@
+<tr>
+
+  <td><%= comment.user.name %></td>
+  <td><%= comment.description %></td>
+  <td><%=I18n.l(comment.created_at)%></td>
+   <td><%= comment.comment_state %></td>
+  <td><%= link_to 'Voir', comment %></td>
+  <td><%= link_to 'Modifier', edit_comment_path(comment) unless correct_current_user(comment)==false || comment.comment_state !='unread' %>
+  
+</tr>

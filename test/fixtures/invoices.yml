@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  project_id: 1
+  total_sum: 1.5
+  due_date: 2011-04-06
+  remaining_sum: 1.5
+
+two:
+  project_id: 1
+  total_sum: 1.5
+  due_date: 2011-04-06
+  remaining_sum: 1.5

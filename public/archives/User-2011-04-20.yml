@@ -1,0 +1,21 @@
+--- 
+:model: User
+:data: 
+- created_at: 2011-04-18 10:36:58.986048 Z
+  email: yodajesuis@hotmail.com
+  encrypted_password: 2ff51cda845e25f486b22ac7c378c68f2dd65f2b722e4bff69161b9c57b04ca2
+  home_directory: /data/users/nicolas
+  id: 1
+  name: Nicolas
+  salt: 8a14d9b21d1c0dd61316929d702e7646950e6ef1e1a8c70667da272f420bc64e
+  updated_at: 2011-04-18 10:37:12.441899 Z
+  user_state: active
+- created_at: 2011-04-20 08:08:20.165255 Z
+  email: taraB@hotmail.com
+  encrypted_password: 884ea798fbac133a94b26549a5d7456e0d5f6f6d2c30c2a90f0a4c47b4c3ed77
+  home_directory: /data/users/hopla
+  id: 2
+  name: hopla
+  salt: 809f86b0e7f54053524ed70bf54be93d1824ad6091bcf2d9b30cdc6061bf2aaf
+  updated_at: 2011-04-20 08:08:34.224049 Z
+  user_state: active

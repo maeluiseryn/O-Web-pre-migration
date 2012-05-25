@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  action_type: MyString
+  user_id: 1
+  action_result: MyString
+  action_state: MyString
+  project_id: 1
+
+two:
+  description: MyString
+  action_type: MyString
+  user_id: 1
+  action_result: MyString
+  action_state: MyString
+  project_id: 1

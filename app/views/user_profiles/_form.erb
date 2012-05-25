@@ -1,0 +1,62 @@
+
+<%= form_for(@user_profile) do |f| %>
+  <% if @user_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_profile.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user_profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<fieldset>
+  <legend>
+    <%="Profile de #{set_legend @user_profile.user.name}." %>
+  </legend>
+  <div class="field">
+    <%= f.label :name,'Prénom' %><br />
+    <%= f.text_field :name , %>
+    
+  </div>
+    <div class="field">
+    <%= f.label :surname,'Nom' %><br />
+    <%= f.text_field :surname %>
+  </div>
+
+  <div class="field">
+    <%=  f.hidden_field :user_id , :value => @user_profile.user_id%>
+  </div>
+
+ <div id="address" class="span-12">
+  <fieldset>
+
+
+    <legend><%= set_legend 'Addresse' %></legend>
+    <%= f.fields_for :address do |address_form| %>
+        <%= render 'shared/address_fields',:f=>address_form %>
+     <% end %>
+
+   </fieldset>
+ </div>
+  
+  <div id='contacts' class='span-12'>
+   <fieldset>
+    <legend><%= set_legend 'Contactes' %></legend>
+    <% f.fields_for :contacts do |contact_form| %>
+        <%= render 'shared/contact_fields' ,:f=>contact_form%>
+     <% end %>
+    <p><%= link_to_add_fields "Ajouter un contact", f, :contacts %></p>
+   </fieldset>
+   </div>
+
+</fieldset>
+  <div class="actions">
+    <%= f.submit %>
+
+  </div>
+
+
+<% end %>

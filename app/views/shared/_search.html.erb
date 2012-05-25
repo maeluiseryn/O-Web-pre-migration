@@ -1,0 +1,18 @@
+<% form_tag search_search_result_path(:format=>:js),:remote=>true ,:method => 'get' do %>
+    <div id="search">
+     <div class="span-8">
+
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Chercher", :name => nil %>
+      <%=  hidden_field_tag :time_opt ,  0 %>
+      <%=  hidden_field_tag :gen_opt ,  0 %>
+   </div><div class="span-5'">
+      <%=link_to_function('options temps','$("#time").show(); $("#time").children().attr("disabled", false); $("#optiontemps").hide();$("#time_opt:hidden").val(1);',:id=>'optiontemps')%>
+      <%=link_to_function('options generales','$("#general").show(); $("#general").children().attr("disabled", false);  $("#optiongeneral").hide();$("#gen_opt:hidden").val(1);',:id=>'optiongeneral')%>
+      
+   </div>
+    <%= render :partial => 'shared/search_options'  %>
+      
+    <%end%>
+
+</div>

@@ -1,0 +1,11 @@
+<div id="flash" style="min-height: 50px" >
+
+
+<% flash.each do |key, msg| %>
+    <%= content_tag :div, msg, :class => [key, " message"], :id => "notice_#{key}" %>
+     <% content_tag :script, :type => "text/javascript" do %>
+     $('#<%="notice_#{key}" %>').fadeOut(5000);
+  <% end %>
+<% end %>
+
+</div>

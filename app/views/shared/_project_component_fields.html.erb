@@ -1,0 +1,13 @@
+<div class="fields">
+<fieldset>
+  <%= f.label :component_type,'Type de Produit: ' %><br>
+  <%= f.select :component_type, get_component_type  %><br>
+  <%= f.label :component_matter,'Matière: ' %><br>
+   <%= f.select :component_matter, get_component_matter  %><br>
+  <%= f.label :number_of_component,'Nombre de pièces' %><br>
+  <%= f.text_field :number_of_component %><br>
+  <%= f.label :component_info,'Informations supplémentaires' %><br>
+  <%= f.text_field :component_info %><br>
+  <%= link_to_remove_fields "Effacer Composant", f %>
+</fieldset>
+</div>

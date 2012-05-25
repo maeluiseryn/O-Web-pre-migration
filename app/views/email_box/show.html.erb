@@ -1,0 +1,6 @@
+<h1>EmailBox#show</h1>
+<p>Find me in app/views/email_box/show.html.erb</p>
+
+<div class='span-18'>
+  <%=(YAML.load @email.content).to_s.encode('UTF-8').html_safe  %>
+</div>

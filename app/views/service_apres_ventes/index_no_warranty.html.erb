@@ -1,0 +1,57 @@
+<h1>SAV sans garantie</h1>
+<div class="span-16">
+
+
+ 
+
+
+</div>
+<table>
+ <thead>
+    <th>Ref</th>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Garantie</th>
+    <th>Matiere</th>
+    <th>Type</th>
+    <th>Date du contact</th>
+    <th>Date d'intervention</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </thead>
+
+<% @service_apres_ventes.each do |service_apres_vente| %>
+  <tr>
+    <td>SAV<%= service_apres_vente.id %></td>
+    <td><%= service_apres_vente.name %></td>
+    <td><%= service_apres_vente.surname %></td>
+    <td><%= service_apres_vente.warranty %></td>
+    <td><%= service_apres_vente.sav_product_matter %></td>
+    <td><%= service_apres_vente.sav_product_type %></td>
+    <td><%= I18n.l(service_apres_vente.contact_date) %></td>
+    <td><%= I18n.l(service_apres_vente.planned_intervention) %></td>
+    <td><%= link_to 'Show', service_apres_vente %></td>
+    <td><%= link_to 'Edit', edit_service_apres_vente_path(service_apres_vente) %></td>
+    <td><%= link_to 'Destroy', service_apres_vente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Service apres vente', new_service_apres_vente_path %>
+<% content_for :sidebar do %>
+
+    <div id="vertmenu">
+      <ul><li><%= link_to 'Sous garantie', index_warranty_path %></li>
+  <li><%= link_to 'Au planning', index_planned_path %></li>
+  <li><%= link_to 'Pas au planning', index_unplanned_path %></li>
+  <li> <%= link_to 'Actif', index_active_path %></li>
+  <li><%= link_to 'Cloturé', index_closed_path %></li>
+  <li><%= link_to 'Tous', service_apres_ventes_path %></li>
+  <li><%= link_to 'Formulaire envoyé', index_sent_path %></li>
+</ul>
+
+     </div>
+ <%end%>

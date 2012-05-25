@@ -1,0 +1,16 @@
+
+<table id="email_table" class="span-18">
+  <tr>
+    <thead>
+    <th>De</th>
+    <th>à</th>
+    <th>Sujet</th>
+
+    <th></th>
+
+    </thead>
+
+  <tbody>
+<%= render :partial => 'email_list',:collection => @emails ,:as=>:email %>
+</tbody>
+</table>

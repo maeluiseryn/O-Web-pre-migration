@@ -1,0 +1,78 @@
+<div class='span-17' style="min-height:25px">
+
+</div>
+<div class="span-16 box" >
+<div class="span-9">
+  <h3><b> Sujet:</b>
+ <%= @comment.description %></h3>
+
+</div>
+<div class="span-6" style="margin-top:3px"><b>Envoyé par</b>
+ <%= @comment.user.name %>  <b>le</b> <%= I18n.l(@comment.created_at) %>
+</div>
+<hr>  
+<div class="span-15 " >
+  
+  <%= new_line_in_text(@comment.content) %>
+
+</div>
+
+
+</div>
+<% if !@comment.contacts.empty? %>
+  <hr>
+  <h4><b>Information(s) de contact associée(s)</b></h4>
+  <%= render :partial =>'shared/contact_show' ,:collection=>@comment.contacts , :as =>:contact %>
+
+
+<%end%>
+<% content_for :sidebar do %>
+  <div id="vertmenu">
+      <ul id="sidebarmenu1">
+
+       <% if  correct_current_user_message_box(@comment.comment_owner)%>
+<% if @comment.comment_state =='unread' %>
+<li>
+<%= link_to 'Lu', read_comment_path(@comment)  %>
+</li>
+<% else  %>
+<% if  @comment.comment_state!='archive' && @comment.comment_state!='mark_for_delete'%>
+<li>
+<%= link_to 'Archive', archive_comment_path(@comment)  %>
+</li>
+
+<li>
+<%= link_to 'Corbeille', trash_comment_path(@comment) %>
+</li>
+<%end%>
+
+<% if @comment.comment_state =='mark_for_delete' %>
+
+<li>
+<%= link_to 'Recuperer', salvage_comment_path(@comment) %>
+</li>
+<% end %>
+<% if @comment.comment_state =='archive' %>
+<li>
+<%= link_to 'Restaurer', restore_comment_path(@comment) %>
+</li>
+<% end %>
+<% end %>
+<% if @comment.user_id != current_user.id && @comment.comment_state =='read'%>
+<li>
+<%= link_to 'Repondre', respond_comment_path(@comment)   %>
+</li>
+<% end  %>
+<% end %>
+<% if correct_current_user(@comment)==true && @comment.comment_state =='unread'%>
+<li>
+<%= link_to 'Modifier le messsage', edit_comment_path(@comment) %>
+</li>
+<%end%>
+<li>
+<%=link_back_message_box(@comment)%>
+</li>
+
+       </ul>
+  </div>
+<% end%>

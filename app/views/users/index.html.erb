@@ -1,0 +1,40 @@
+<h1>Listing Users</h1>
+<h3>Number of records: <%= @users.count %> </h3>
+
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Date de création</th>
+
+    <th>Dossier personnel</th>
+    <th>Etat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+
+  <tr>
+    <td><%= user.id %></td>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.created_at %></td>
+    <td><%= user.home_directory %></td>
+     <td><%= user.aasm_current_state %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= profile_show_or_create_link user %></td>
+    <td><%= link_to "Client de l'utilisateur",user_clients_path(user) %></td>
+    <td><%= #noinspection RubyArgCount
+            link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Activate', activate_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<div id="new_user"></div>

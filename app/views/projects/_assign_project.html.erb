@@ -1,0 +1,7 @@
+<div id="assign_project">
+  <%= form_tag(assign_project_path(@project) ) do %>
+      <%= label_tag(:user_id, "Assigner à :") %>
+      <%= select_tag(:user_id,options_for_select(user_name_list)) %>
+      <%= submit_tag("Assigner") %>
+  <% end %>
+</div>

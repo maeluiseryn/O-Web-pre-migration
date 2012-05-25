@@ -1,0 +1,114 @@
+<%= form_for(@project_action) do |f| %>
+  <% if @project_action.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project_action.errors.count, "error") %> prohibited this project_action from being saved:</h2>
+
+      <ul>
+      <% @project_action.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div id="request" class="span-18">
+ <% if  !@project_action.action_type.nil?%>
+      <div id='description-edit' class="field span-15">
+    <%= f.label "Description de l'action:" %><br />
+    <%= f.text_field :description %>
+  </div>
+ <%if @project_action.action_type=='Rendez-vous' %>
+
+
+    <div id='rendezvous-edit'  class="field span-15">
+    <%= f.label "Date:" %><br />
+    <%= f.datetime_select :precise_date%>
+  </div>
+
+ <% elsif @project_action.action_type=='Offre'%>
+ <div id='offre-edit'  class="field span-15">
+    <%= f.label "Prix proposé:" %><br />
+    <%= f.text_field :offer_price%>€<br />
+
+    <%= f.label "Echéance de l'offre:" %><br />
+    <%= f.date_select :presumed_end%>
+  </div>
+
+ <% elsif @project_action.action_type=='Production'%>
+      <div id="production-edit" class="field span-15">
+     <%= f.label "Produit par:" %><br />
+    <%= f.select :producing_society,get_producing_society %><br />
+    <%= f.label "Début de la production:" %><br />
+    <%= f.date_select :presumed_begin %><br />
+    <%= f.label "Fin de la production:" %><br />
+    <%= f.date_select :presumed_end %>
+  </div>
+
+ <% elsif @project_action.action_type=='Placement'%>
+   <div id="placement-edit" class="field span-15">
+     <%= f.label "Equipe de placement:" %><br />
+    <%= f.text_field :placement_team %><br /> 
+    <%= f.label "Début du placement:" %><br />
+    <%= f.date_select :presumed_begin %><br />
+    <%= f.label "Fin du placement:" %><br />
+    <%= f.date_select :presumed_end %>
+  </div>
+
+
+ <% elsif @project_action.action_type=='Autres'%>
+ <%end%>
+       <div id="remark-edit" class="field span-15">
+    <%= f.label "Remarque:" %><br />
+    <%= f.text_area :remark %>
+  </div>
+ <%else%>
+<div id="requestinfo" class="span-15">
+  <div class="field">
+    <%= f.label "Type d'action" %><br />
+    <%= f.select :action_type ,get_action_type,:default=>"Choisir type d'action" %>
+  </div>
+
+  <div id='description' class="field span-15">
+    <%= f.label "Description de l'action:" %><br />
+    <%= f.text_field :description %>
+  </div>
+</div>
+   <div id='rendezvous'  class="field span-15">
+    <%= f.label "Date:" %><br />
+    <%= f.datetime_select :precise_date%>
+  </div>
+  <div id='offre'  class="field span-15">
+    <%= f.label "Prix proposé:" %><br />
+    <%= f.text_field :offer_price%>€<br />
+
+    <%= f.label "Echéance de l'offre:" %><br />
+    <%= f.date_select :presumed_end%>
+  </div>
+   <div id="production" class="field span-15">
+     <%= f.label "Produit par:" %><br />
+    <%= f.select :producing_society,get_producing_society %><br />
+    <%= f.label "Début de la production:" %><br />
+    <%= f.date_select :presumed_begin %><br />
+    <%= f.label "Fin de la production:" %><br />
+    <%= f.date_select :presumed_end %>
+  </div>
+  <div id="placement" class="field span-15">
+     <%= f.label "Equipe de placement:" %><br />
+    <%= f.text_field :placement_team %><br /> 
+    <%= f.label "Début du placement:" %><br />
+    <%= f.date_select :presumed_begin %><br />
+    <%= f.label "Fin du placement:" %><br />
+    <%= f.date_select :presumed_end %>
+  </div>
+ <%end%>
+  <div id="remark" class="field span-15">
+    <%= f.label "Remarque:" %><br />
+    <%= f.text_area :remark %>
+  </div>
+
+</div>
+    <%= f.hidden_field :project_id %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

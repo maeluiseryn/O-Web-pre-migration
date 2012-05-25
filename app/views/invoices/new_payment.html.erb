@@ -1,0 +1,7 @@
+<div id="new_payment">
+<h1>Nouveau paiement </h1>
+
+<%= render :partial=>'payment_form' ,:object=>@payment ,:as=>:payment%>
+
+<%= link_to 'Retour a la facture', invoice_path(@invoice) unless request.format=='application/javascript' %>
+</div>

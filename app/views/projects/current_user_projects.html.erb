@@ -1,0 +1,23 @@
+<h1>Liste des projets</h1>
+
+<%= will_paginate :previous_label=>'&larr; Précédent',:next_label=>'Suivant &rarr;' %>
+<table>
+  <thead>
+
+           <th>Client</th>
+           <th>Reference projet</th>
+           <th>Etat du projet</th>
+           <th>Date de création</th>
+           <th></th>
+           <th></th>
+           <th></th>
+   </thead>
+
+
+<% @projects.each do |project| %>
+  <%=render :partial =>'project_list', :object=>project ,:as=>:project %>
+<% end %>
+</table>
+<%= will_paginate :previous_label=>'&larr; Précédent',:next_label=>'Suivant &rarr;' %>
+<br />
+<%= link_to 'Back' ,user_path(current_user) %>

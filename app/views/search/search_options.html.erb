@@ -1,0 +1,12 @@
+
+<div id='searchoption'>
+<p>Rechercher un ?
+
+<%= select_tag :model_type ,
+               options_for_select(model_list
+                )%></p></div>
+<p>Résultats par pages: <%= select_tag :per_page ,
+               options_for_select(per_page_result
+                )%></p>
+<%=link_to_function('option temps','$("#time").show(); $("#time").children().attr("disabled", false);')%>
+

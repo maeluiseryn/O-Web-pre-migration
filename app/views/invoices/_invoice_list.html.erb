@@ -1,0 +1,11 @@
+<tr>
+  <td><%=link_to(invoice.project.project_ref_string,project_path(invoice.project_id)) %></td>
+  <td><%= invoice.invoice_ref %></td>
+  <td><%= invoice.total_sum.to_s+"€" %></td>
+  <td><%=I18n.l(invoice.due_date) %></td>
+  <td><%= invoice.remaining_sum.to_s+"€" %></td>
+  <td><%= I18n.l(invoice.created_at) %></td>
+  <td><%= link_to 'Voir', invoice %></td>
+  <td><%= link_to 'Modifier', edit_invoice_path(invoice) unless invoice.aasm_current_state==:paid%></td>
+  <td><%= (link_to 'Detruire', invoice, :confirm => 'Etes-vous sûre?', :method => :delete)  unless invoice.aasm_current_state==:paid%></td>
+</tr>

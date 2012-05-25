@@ -1,0 +1,1019 @@
+/etc/gdm/Xsession: Beginning session setup...
+Setting IM through im-switch for locale=en_US.
+Start IM through /etc/X11/xinit/xinput.d/all_ALL linked to /etc/X11/xinit/xinput.d/default.
+GNOME_KEYRING_CONTROL=/tmp/keyring-TL8HEg
+GNOME_KEYRING_CONTROL=/tmp/keyring-TL8HEg
+GNOME_KEYRING_CONTROL=/tmp/keyring-TL8HEg
+SSH_AUTH_SOCK=/tmp/keyring-TL8HEg/ssh
+
+(polkit-gnome-authentication-agent-1:1776): GLib-GObject-WARNING **: cannot register existing type `_PolkitError'
+
+(polkit-gnome-authentication-agent-1:1776): GLib-CRITICAL **: g_once_init_leave: assertion `initialization_value != 0' failed
+** Message: applet now removed from the notification area
+Unable to find a synaptics device.
+Starting gtk-window-decorator
+Initializing nautilus-gdu extension
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+I/O warning : failed to load external entity "/home/maeluiseryn/.compiz/session/103a6fafefa9b446c1130029567395348000000017040026"
+** Message: applet now embedded in the notification area
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+** (update-notifier:2001): DEBUG: --security-updates-unattended: 0
+
+** (update-notifier:2001): DEBUG: aptdaemon on bus: 0
+** (update-notifier:2001): DEBUG: Skipping reboot required
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+[  59007]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 
+[ 187316]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+[6050599]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 
+[6067404]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 
+[6110303]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+NOTE: child process received `Goodbye', closing down
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Error: cannot create directory "/tmp/kde-maeluiseryn": File exists
+Error: cannot create directory "/tmp/ksocket-maeluiseryn": File exists
+kdeinit4: Shutting down running client.
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+QMetaObject::invokeMethod: No such method KUniqueApplication::loadCommandLineOptionsForNewInstance()
+kbuildsycoca4 running...
+kate(9589)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/usr/share/mime/magic"
+kate(9592)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/usr/share/mime/magic"
+kate(9589)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/home/maeluiseryn/.local/share/mime/magic"
+kate(9592)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/home/maeluiseryn/.local/share/mime/magic"
+kate(9589)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/usr/share/mime/magic"
+kate(9589)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/home/maeluiseryn/.local/share/mime/magic"
+kate(9592)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/usr/share/mime/magic"
+kate(9592)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/home/maeluiseryn/.local/share/mime/magic"
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+[11004948]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+kate(10729)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/usr/share/mime/magic"
+kate(10729)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/home/maeluiseryn/.local/share/mime/magic"
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+QMetaObject::invokeMethod: No such method KUniqueApplication::loadCommandLineOptionsForNewInstance()
+params.c:OpenConfFile() - Unable to open configuration file "/home/maeluiseryn/.smb/smb.conf":
+	No such file or directory
+params.c:OpenConfFile() - Unable to open configuration file "/home/maeluiseryn/.smb/smb.conf.append":
+	No such file or directory
+X Error: BadWindow (invalid Window parameter) 3
+  Major opcode: 20 (X_GetProperty)
+  Resource id:  0x4e03ec1
+X Error: BadWindow (invalid Window parameter) 3
+  Major opcode: 20 (X_GetProperty)
+  Resource id:  0x4e03ec1
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+kate(13452)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/usr/share/mime/magic"
+kate(13452)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  "/home/maeluiseryn/.local/share/mime/magic"
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+klauncher(9616)/kio (KLauncher): SlavePool: No communication with slave. 
+
+
+(nautilus:1783): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL' failed
+[ 190094]   WARN - ymbols.structure.SymbolBuilder - Cannot find Object class for /home/maeluiseryn/Desktop/RubyMine-3.1/rubystubs19/full_rails.rb. Lets force create it. 

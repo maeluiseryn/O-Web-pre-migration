@@ -1,0 +1,30 @@
+<div class="span-7" >
+<h2>Inserez le prix du projet</h2>
+<%= form_for @project do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> Erreurs empèche ce Projet d'être sauvé:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+   <%= hidden_field_tag :price_set,  1 %>
+ <div class="field">
+    <%= f.label :project_price,'Prix du projet: ' %><br />
+    <%= f.text_field :project_price %>€
+  </div>
+
+   <div class="span-9">
+     <%= f.label :add_remark,'Remarque particuliere' %><br>
+     <%=f.text_area :add_remark %>
+   </div>
+   <div class="actions span-9">
+    <%= f.submit %>
+  </div>
+
+<% end %>
+</div>

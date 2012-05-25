@@ -1,0 +1,94 @@
+
+
+<div id="first_content">
+
+<div class="span-15" style="min-height: 50px"><h3><u>Profile utilisateur de:</u>&nbsp;<b><%=@user_profile.user.name.capitalize%></b> </h3></div>
+<hr>
+<div class='span-8'>
+
+<p>
+  <b>Nom:</b>
+  <%= @user_profile.name %>
+</p>
+<p>
+  <b>Prénom:</b>
+  <%= @user_profile.surname %>
+</p>
+  <p>
+    <b>Email:</b>
+    <%= @user_profile.user.email %>
+  </p>
+
+</div>
+<div class='span-9' >
+
+<p>
+  <b>Créé le :</b>
+  <%=I18n.l(@user_profile.user.created_at) %>
+</p>
+<p>
+  <b>Dossier utilisateur:</b>
+  <%= @user_profile.user.home_directory %>
+</p>
+  <p>
+  <b>Etat de l'utilisateur:</b>
+  <%= @user_profile.user.aasm_current_state %>
+</p>
+</div>
+
+</div>
+<div class="span-18" style="height: 30px">
+
+</div>
+<div class='span-18'>
+<div id="addresses" class='span-18'>
+  <hr>
+  <h4><b>Adresse de <%= @user_profile.surname.capitalize+" "+@user_profile.name.capitalize %></b> </h4>
+
+   <%= if @user_profile.address !=nil then render :partial => "shared/address_show" ,:object=> @user_profile.address ,:as=>:address end%>
+</div>
+<div class="span-18" style="height: 30px">
+
+</div>
+  <hr>
+<h4><b>Informations de contact de <%= @user_profile.surname.capitalize+" "+@user_profile.name.capitalize %> </b></h4>
+
+<div id="contacts" class='span-17'>
+<table>
+ <thead>
+
+           <th>Description</th>
+           <th>Type de contact</th>
+           <th>Donnée de contact</th>
+
+
+         </thead>
+  <%= if !@user_profile.contacts.empty? then render :partial => "shared/contact_list", :collection => @user_profile.contacts ,:as=>:contact end%>
+</table>
+</div>
+</div>
+
+<td></td>
+<% content_for :sidebar do %>
+<div id="vertmenu">
+      <ul id="sidebarmenu1">
+
+        <li>
+          <%= link_to 'Modifier le profile', edit_user_user_profiles_path(@user_profile.user_id) %>
+         </li>
+         <li>
+           <%= #noinspection RubyArgCount
+            link_to "Modifier l'utilisateur", edit_user_path(@user_profile.user_id) %>
+         </li>
+
+        <li>
+          <%= link_to 'Paramètres Email ',set_smtp_account_settings_path(:format=>:js),:remote=>true %>
+         </li>
+        <li>
+          <%= link_to "Retour à l'utilisateur" , user_path(@user_profile.user_id)%>
+         </li>
+
+
+</ul>
+</div>
+<% end %>

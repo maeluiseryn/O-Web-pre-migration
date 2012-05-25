@@ -1,0 +1,32 @@
+<%@comments unless @comments.nil?%>
+<div id='file_browser_content'>
+  <ul class="directories"style="height:0px;padding:0;margin:0">
+    <% @dirs.each do |dir| %>
+        <li class="dir">
+          <div class="icon">
+            <a href="<%= url_for file_browser_path :dir => dir[:url] %>">
+              <label><%= dir[:name] %></label>
+            </a>
+          </div>
+          <ul class="infos">
+            <li class="label"><label><%= dir[:name] %></label></li>
+            <li class="delete"><a href="<%= url_for delete_file_file_browser_path :file => dir[:url] %>">delete</a></li>
+          </ul>
+        </li>
+    <% end %>
+  </ul>
+
+  <ul class="files"style="height:0px;padding:0;margin:0">
+    <% @files.each do |file| %>
+        <li class="<%= file[:type] %>">
+          <div class="icon">
+            <a href="<%= url_for file_browser_retrieve_archive_path :archive_url=>file[:url] %>"><img src="<%= file[:icon] %>" title="<%= file[:name] %>" /></a>
+          </div>
+          <ul class="infos">
+            <li class="label"><label title="<%= file[:name] %>"><%= file[:name] %></label></li>
+            <li class="delete"><a href="<%= url_for delete_file_file_browser_path :file => file[:url] %>" title="Delete this file">delete</a></li>
+          </ul>
+        </li>
+    <% end %>
+  </ul>
+</div>

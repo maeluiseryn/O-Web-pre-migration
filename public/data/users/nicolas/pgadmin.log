@@ -1,0 +1,24 @@
+2011-02-08 11:43:30 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+FATAL:  password authentication failed for user "postgres"
+
+2011-02-08 11:43:47 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2011-02-08 13:32:39 ERROR  : FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2011-02-08 13:32:44 ERROR  : FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2011-02-08 13:32:45 ERROR  : FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2011-02-08 15:02:33 ERROR  : Error connecting to the server: 
+2011-02-08 15:02:54 ERROR  : Error connecting to the server: 
+2011-02-08 15:06:51 ERROR  : can't open file '/etc/postgresql/8.4/main/pg_hba.conf' (error 13: Permission denied)
+2011-02-08 15:42:31 ERROR  : can't open file '/etc/postgresql/8.4/main/postgresql.conf' (error 13: Permission denied)
+2011-02-08 15:42:43 ERROR  : can't open file '/etc/postgresql/8.4/main/postgresql.conf' (error 13: Permission denied)

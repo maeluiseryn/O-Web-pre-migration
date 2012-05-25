@@ -1,0 +1,135 @@
+<p id="notice"><%= notice %></p>
+<div id="progressbarWrapper" style="height:30px; " class="ui-widget-default">
+	<div id="progressbar" style="height:100%;"></div>
+</div>
+<div>
+  <h3>SAV<%= @service_apres_vente.id%></h3>
+</div>
+<p>
+  <b>Nom:</b>
+  <%= @service_apres_vente.name.capitalize+
+  " "+@service_apres_vente.surname.capitalize  %>
+</p>
+<div class="span-17">
+  <div class="span-7">
+  <p>
+  <b>Date du contact:</b>
+  <%=I18n.l @service_apres_vente.contact_date %>
+</p>
+</div>
+<div class="span-7">
+<p>
+  <b>Date de l'intervention:</b>
+  <%=I18n.l @service_apres_vente.planned_intervention %>
+</p>
+</div>
+</div>
+<div class="'span-15 box"><div class="span-7" >
+<p>
+   <b>Produit :</b>
+  <%= @service_apres_vente.sav_product_type %>
+</p>
+</div>
+  <div class="span-7" >
+<p>
+  <b>Matière:</b>
+  <%= @service_apres_vente.sav_product_matter %>
+</p></div>
+  <div class="span-14">
+<p>
+  <b>Informations supplémentaire:</b>
+  <%= @service_apres_vente.sav_product_info %>
+</p>
+  </div>
+</div>
+<div class="span-14">
+<p>
+  <b>Numero de facture:</b>
+  <%= @service_apres_vente.invoice_number %>
+</p>
+</div>
+<div class="span-17">
+<table>
+  <thead>
+            <th>   </th>
+           <th>Client</th>
+           <th>Only-Wood avant</th>
+          <th>Only-Wood après</th>
+
+  </thead>
+  <tr>
+<td>
+ Sous-Garantie
+  <td>
+<%= yes_no @service_apres_vente.war_client %></td>
+  <td>
+<%= yes_no @service_apres_vente.war_ow_bef %></td>
+<td>
+<%= yes_no @service_apres_vente.war_ow_aft %></td>
+</tr>
+</table>
+</div>
+<div class="span-17">
+<h4><b>Adresse de l'intervention:  </b></h4>
+ <%= if !@service_apres_vente.addresses.empty? then render :partial => "shared/address_show" ,:collection=> @service_apres_vente.addresses ,:as=>:address end%>
+</div>
+<div class="span-17">
+<div class='span-17'>
+  <hr>
+<h4><b>Informations de contact:  </b></h4>
+
+<table>
+ <thead>
+
+           <th>Description</th>
+           <th>Type de contact</th>
+           <th>Donnée de contact</th>
+
+
+         </thead>
+  <%= if !@service_apres_vente.contacts.empty? then render :partial => "shared/contact_list", :collection => @service_apres_vente.contacts ,:as=>:contact end%>
+  </table>
+</div>
+<%= link_to 'Edit', edit_service_apres_vente_path(@service_apres_vente) %> |
+<%= link_to 'Back', service_apres_ventes_path %>
+</div>
+
+<% content_for :sidebar do %>
+
+    <div id="vertmenu">
+      <ul>
+       <%# <li>
+       = link_to'Uploader' ,:controller =>'projects' ,:action=>'upload_a_file',:tabindex=>'2'</li>%>
+
+        <li>
+<%= link_to('Fiche de SAV' ,create_sav_fiche_path(@service_apres_vente),:target=>'_blank',:tabindex=>'4')%>
+       </li>
+
+        <li>
+<%= link_to'Formulaire SAV par mail ' ,send_sav_form_mail_path(@service_apres_vente),:tabindex=>'7'%>
+       </li>
+<% if @service_apres_vente.aasm_current_state==:created    %>
+  <li>
+<%= link_to'Activer sav ' ,activate_sav_path(@service_apres_vente),:tabindex=>'8'%>
+       </li>
+<%elsif  @service_apres_vente.aasm_current_state==:active%>
+
+   <li>
+<%= link_to'Clôturer sav ' ,close_sav_path(@service_apres_vente),:tabindex=>'8'%>
+       </li>
+<%elsif  @service_apres_vente.aasm_current_state==:closed %>
+
+     
+<% end %>
+
+        <li><%= link_to 'Modifier', edit_service_apres_vente_path(@service_apres_vente)  %></li>
+
+      </ul>
+    </div>
+
+
+
+
+
+
+<% end%>

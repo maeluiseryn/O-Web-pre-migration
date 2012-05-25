@@ -1,0 +1,246 @@
+
+#sign_in {
+width: 200px;
+
+}
+#sign_in_legend{
+ color: red;
+
+}
+#sign_in_status_box{
+    float: right;
+    margin-top: -50px;
+    /*background: url(/images/hazard-login.gif) no-repeat center top;*/
+}
+
+#sign_in_status p  {
+    color: white;
+}
+#sign_in_status a  {
+    color: white;
+
+}
+#sign_in_box{position: absolute;
+             padding-left:10px;
+             padding-right:10px}
+
+/*body{background-color: #444444}*/
+
+#content{
+    background-color:#555;
+    min-height:500px;
+    }
+
+
+#basic-modal-content {display:none;}
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+#simplemodal-container {height:inherit; width:inherit; color:#bbb; background-color:#333; border:4px solid #444; padding:12px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(/images/x.gif) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container #basic-modal-content {padding:8px;}
+body {
+	margin: 0; padding: 0;
+	font: 10px normal Arial, Helvetica, sans-serif;
+	background: #555 url(/images/body_bg.gif) repeat-x;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+#header {
+	background: url(/images/head_back.gif) no-repeat center top;
+	padding-top: 120px;
+}
+#header .disclaimer {
+	color: #999;
+	padding: 100px 0 7px 0;
+	text-align: right;
+	display: block;
+	position: absolute;
+	top: 0; right: 0;
+}
+#header .disclaimer a {	color: #ccc;}
+ul.topnav {
+	list-style: none;
+	padding: 0 20px;
+	margin: 0;
+	float: left;
+	width: 920px;
+	background: #222;
+	font-size: 1.2em;
+	background: url(/images/topnav_bg.gif) repeat-x;
+}
+ul.topnav li {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 0;
+	position: relative; /*--Declare X and Y axis base--*/
+}
+ul.topnav li a{
+	padding: 10px 5px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover{
+	background: url(/images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(/images/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	background: #333;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 170px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border: 1px solid #111;
+}
+ul.topnav li ul.subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #252525; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+	width: 170px;
+}
+html ul.topnav li ul.subnav li a {
+	float: left;
+	width: 145px;
+	background: #333 url(/images/dropdown_linkbg.gif) no-repeat 10px center;
+	padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #222 url(/images/dropdown_linkbg.gif) no-repeat 10px center;
+}
+#header img {
+	margin: 20px 0 10px;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+
+#footer {
+  /* position:absolute;*/
+   bottom:0;
+   
+   height:60px;   /* Height of the footer */
+   background-color:#888;
+
+}
+.debug_dump{
+    color: white;
+    margin-top:0px;
+    margin-left:10px
+}
+#content_column {
+    background-color:#f5f5f5
+
+}
+#content{
+    background-color: #f5f5f5;
+
+
+}
+form #content{
+    background-color: white
+
+}
+#container{
+
+
+}
+#pre_footer{
+    height:100px;
+}
+
+#sidebar {
+
+
+background-color: #f5f5f5;
+}
+#first_content {
+    min-height: 125px
+}
+#vertmenu {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+ 
+  padding: 0px;
+  margin: 0px;
+  }
+
+  #vertmenu h1 {
+  display: block;
+  background-color:#FF9900;
+  font-size: 90%;
+  padding: 3px 0 5px 3px;
+  border: 1px solid #000000;
+  color: #333333;
+  margin: 0px;
+  width:159px;
+  }
+
+  #vertmenu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  }
+  #vertmenu ul li {
+  margin: 0px;
+  padding: 0px;
+  border-bottom:1px solid #999999;
+  }
+  #vertmenu ul li a {
+  font-size: 120%;
+  display: block;
+  border-bottom: 1px  #C39C4E;
+  padding: 8px 0px 3px 6px;
+  text-decoration: none;
+  color: #0066cc;
+  
+  }
+
+  #vertmenu ul li a:hover, #vertmenu ul li a:focus {
+  color: #000000;
+  background-color: #eeeeee;
+  }
+	#design,
+#development,
+#other,
+#wpbranch{
+       display: none;
+      }
+#fiche_de_rendez_vous tbody tr:nth-child(2n) td, tbody tr.even td { background:none}
+/*#clients_table tbody tr:nth-child(2n) td, tbody tr.even td { background:red}*/
+.valign{
+    margin-top:10px;
+}
+#search_page select {width: 120px}
+
+#time select {width:58px ;}
+#time_type select{width:120px; }
+#project_add_remark{
+  width:250px;
+}
+#simplemodal-data h2 , #simplemodal-data h1, .simplemodal-data h1 {
+    color:white;
+}
+.milieu  { vertical-align:middle;  }

@@ -1,0 +1,20 @@
+<h1> Welcome!</h1>
+
+<% if request.format.html?%>
+  <div id="sidebar">
+    This is a sidebar. It will only be visible in the HTML version.
+</div>
+<%end%>
+<%=pdf_image_tag('login.png', :alt => 'Download')%>
+<%= link_to'test', search_new_search_path(:model_type =>'Project'),%>
+<p>
+  The requested format is yo: #{request.format.to_s}!
+  </p>
+<% if request.format.html?%>
+  <p>
+    <%= link_to  url_for(request.params.merge(:format => :pdf)) do%>
+      <%= image_tag('/images/pdf_icon.png', :alt => 'Download') %>
+      Download as PDF
+  <p>
+<%end%>
+<%end%>

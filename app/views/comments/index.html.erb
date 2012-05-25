@@ -1,0 +1,22 @@
+<h1>Liste des Commentaires</h1>
+
+<table>
+  <tr>
+    <th>Reference projet</th>
+    <th>Description</th>
+    <th>Contenu</th>
+    <th>Utilisateur</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+  <%= render :partial => 'comment_list',:collection => @comments,:as=>:comment %>
+
+</table>
+
+<br />
+
+<%#= link_to 'Nouveau Commentaire', new_project_comment_path unless params[:project_id]==nil %>
+<%#= link_to 'Retour au projet', project_path(params[:project_id]) unless params[:project_id]==nil %>

@@ -1,0 +1,5 @@
+//$("<%# escape_javascript render(:file => 'sessions/new.html.erb') %>").insertAfter('#sign_in_status');
+//$('#sign_in_box').slideDown();
+//$('#sign_in_status').hide();
+//e.preventDefault();
+$("<%= escape_javascript render(:file => 'sessions/new.html.erb') %>").modal()

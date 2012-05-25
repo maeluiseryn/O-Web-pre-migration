@@ -1,0 +1,112 @@
+<div class="span-18"><div class="span-10">
+ <h2 style="margin-top:20px"><%= @project_action.description.capitalize %></h2></div><div class="span-6" style="">
+  <%if @project_action.aasm_current_state==:open%>
+  <p>
+
+    <% form_tag success_failure_path do %>
+     <%= select_tag :success_failure ,
+                 options_for_select(@project_action.aasm_events_for_current_state
+                  )%>
+         <%= submit_tag "Cloturer" %>
+    <% end %>
+  </p>
+  <%end%>
+   
+    </div>
+  </div>
+
+<hr>
+
+<p>
+<b>Projet:</b>
+  <%=link_to( @project_action.project.project_ref_string,project_path(@project_action.project_id)) %>
+</p>
+<div class="span-8">
+<p>
+  <b>Action type:</b>
+  <%=@project_action.action_type %>
+</p>
+<p>
+<b>Menée par:</b>
+  <%= @project_action.user.name %>
+</p>
+
+<p>
+<b>Phase du projet:</b>
+  <%= @project_action.project_state %>
+</p>
+<p>
+ <b>Creation de l'action:</b>
+  <%=I18n.l(  @project_action.created_at) %>
+</p>
+</div>
+<div class="span-8">
+<% if @project_action.action_type=='Rendez-vous' %>
+<div id='rendez-vous'  class="span-15">
+
+   <p><b>Date du rendez-vous</b>
+    <%=I18n.l(@project_action.precise_date) %></p>
+
+</div>
+<%elsif  @project_action.action_type=='Production' %>
+<p>
+<b>Produit par:</b>
+ <%= @project_action.producing_society %>
+</p>
+<p>
+<b>Début de la production:</b>
+ <%= @project_action.presumed_begin %>
+</p>
+<p>
+<b>Fin de la production:</b>
+ <%= @project_action.presumed_end %>
+</p>
+<%elsif  @project_action.action_type=='Offre' %>
+      <p>
+            <b>Montant de l'offre:</b>
+             <%= @project_action.offer_price %>
+            </p>
+
+      <p>
+      <b>Offre valide jusqu'au:</b>
+       <%= @project_action.presumed_end %>
+      </p>
+
+<%elsif  @project_action.action_type=='Placement' %>
+  <p>
+<b>Equipe de placement:</b>
+ <%= @project_action.placement_team %>
+</p>
+<p>
+<b>Début placement:</b>
+ <%= @project_action.presumed_begin %>
+</p>
+<p>
+<b>Fin placement:</b>
+ <%= @project_action.presumed_end %>
+</p>
+<%else%>    
+
+<%end%>
+<p><b>Remarque:</b><br/>
+    <%= @project_action.remark %>
+</p>  
+</div>  
+<div class="span-18">
+
+
+<hr>
+<p>
+ <h4><b>Resultat de l'action:</b>
+  <% if @project_action.action_result.nil? %>
+  pas de résultat.
+  <%else%>
+  <%= @project_action.action_result.capitalize %>
+  <%end%>
+</h4>
+</div>
+<div class="span-18">
+ <hr> 
+<%= link_to 'Modifier', edit_project_action_path(@project_action) %> |
+<%= link_to 'Retour', project_project_actions_path(@project_action.project) %>
+</div>

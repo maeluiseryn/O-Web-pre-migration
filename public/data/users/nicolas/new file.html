@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Subtraction Form 0.2</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<p><img src="http://www.subtraction.com/assets/subtraction_logo_black.gif" alt="" /></p>
+	<h1>The Subtraction Good Form 0.2</h1>
+
+	<p>This sample form will validate XHMTL 1.0 Strict, and it will render with reasonable consistency across the following Web browsers&#58;</p>
+	<ul>
+		<li>Safari 1.2 for Mac OS X</li>
+		<li class="ok">Safari 2.0 for Mac OS X</li>
+		<li class="ok">OmniWeb 5.1.1 for Mac OS X</li>
+		<li>Internet Explorer 5.2 for Mac OS X</li>
+
+		<li class="ok">Camino 0.8.4 for Mac OS X</li>
+		<li>Camino 0.9a1 for Mac OS X ?</li>
+		<li>Firefox 1.0 for Mac OS X ?</li>
+		<li class="ok">Firefox 1.0.4 for Windows</li>
+		<li class="ok">Firefox 1.0.6 for Mac OS X</li>
+		<li class="ok">Internet Explorer 5.5 for Windows</li>
+
+		<li class="ok">Internet Explorer 6.0 for Windows</li>
+		<li class="mwa">Opera 7.54 for Windows</li>
+		<li class="mwa">Opera 8.02 for Mac OS X</li>		
+	</ul>
+	<p>It may not look exactly the same across all those browsers, but it <em>will</em> look decent in all of them &#40;some moreso than others, obviously&#41;.</p>
+
+	<p>Forms are notoriously difficult to style, and to get a form even to this point takes a lot of effort. So you are welcome to use this form in whole or in part to create one of your own. If you choose to credit me, that would be terrific, but it&#8217;s not necessary.</p>
+	<p>I&#8217;ve done my best to keep the markup and CSS simple and flexible enough to accommodate different kinds of input data. However, I make no claims that this form will be easy to adapt to your own needs. And I <em>cannot</em> help you if you run across problems while working with it.</p>
+	<p>If you can improve upon my markup and/or my CSS, please share your changes with me &#8212; I&#8217;ll post a new version of this form for others to benefit from. Thanks!</p>
+
+	<p><strong>Khoi Vinh</strong><br />Mon, 22 Aug 2005</p>
+	<p>P.S. You can read more about why I did this in my <a href="http://www.subtraction.com/archives/2005/0822_free_form_fo.php">blog post</a>.</p>
+	
+	<h3>On 0.1.alt or 0.2, whatever</h3>
+	<p>This solution chooses to ignore Opera's problem with 'legend' in favor of accessibility: (position: relative styled) legends inside field-sets. Explorer has the same problem but is easily styled right with future proof css selector for the good kids (which includes Opera).
+	</p>
+	<p>In the end it's about priorities and for most projects I feel accessibility and standards are more important than a styling issue in a browser with a relative small market share (By the way, no idea how this renders on a mobile device where Opera is a pretty big player)</p> 
+  <p><strong>Thomas Maas</strong><br />Tue, 23 Aug 2005</p>
+
+	
+	<form action="null.html" method="post">
+		<fieldset>
+		  <legend>Basic Information</legend>	
+			<label class="field-first">First Name &#42;<input type="text" name="first_name" value="" /></label>
+			<label class="field-last">Last Name &#42;<input type="text" name="last_name" value="" /></label>
+			<label class="field-address">Home Address &#42;<input type="text" name="address" value="" /></label>
+			<label class="field-city">City &#42;<input type="text" name="city" value="" /></label>
+
+			<label class="field-state">State &#42;<select name="state"><option>AL</option><option>AK</option><option>AR</option><option>AZ</option><option>CA</option><option>CO</option><option>CT</option><option>DC</option><option>DE</option><option>FL</option><option>GA</option><option>HI</option><option>ID</option><option>IA</option><option>IL</option><option>IN</option><option>KS</option><option>KY</option><option>LA</option><option>MA</option><option>MD</option><option>ME</option><option>MI</option><option>MO</option><option>MN</option><option>MS</option><option>MT</option><option>NC</option><option>ND</option><option>NE</option><option>NH</option><option>NJ</option><option>NM</option><option>NY</option><option>NV</option><option>OH</option><option>OK</option><option>OR</option><option>PA</option><option>RI</option><option>SC</option><option>SD</option><option>TN</option><option>TX</option><option>UT</option><option>VA</option><option>VT</option><option>WA</option><option>WI</option><option>WV</option><option>WY</option></select></label>
+
+			<label class="field-zip">Zip Code &#42;<input type="text" name="zip" value="" /></label>                   
+			<label class="field-email">Email &#42;<input type="text" name="email" value="" /></label>
+			<label class="field-phone">Phone<input type="text" name="phone" value="" /></label> 
+		</fieldset>
+		<fieldset>
+		  <legend>Choose Your Illusion &#42;</legend>
+			<input id="radiobutton_1" type="radio" name="radiobutton_type" value="" />
+			<label class="radioitem" for="radiobutton_1">M.C. Hammer Please Hammer&#58; Don&#8217;t Hurt &#8217;Em</label>
+
+			<input id="radiobutton_2" type="radio" name="radiobutton_type" value="" />
+			<label class="radioitem" for="radiobutton_2">Bell Biv Devoe&#58; Poison<br />
+			lorem ipsum ante ipsum primis in faucibus orco posuere cubilia Curae; Fusce scelerisque erat sit amet neque sit amet neque ante ipsum primis </label>
+			<input id="radiobutton_3" type="radio" name="radiobutton_type" value="" />
+			<label class="radioitem" for="radiobutton_3">Michael Bolton Soul Provider</label>
+			<input id="radiobutton_4" type="radio" name="radiobutton_type" value="" />
+
+			<label class="radioitem" for="radiobutton_4">Winger<br />In the Heart of the Young</label>
+		</fieldset>
+		<fieldset>
+		  <legend>More Text</legend>	
+			<label class="field-describe">Describe What You&#8217;re Wearing<textarea name="describe" cols="40" rows="5"></textarea></label>
+		</fieldset>
+
+		
+		<fieldset>
+		<legend>You Never Answer Our Emails</legend>
+			<input id="checkbox_1" type="checkbox" name="subscribe" value="y" /><label for="checkbox_1" class="field-checkbox">Yes, please sign me up for lots of spam</label>
+			<input id="checkbox_2" type="checkbox" name="subscribe" value="y" /><label for="checkbox_2" class="field-checkbox">Yes, please sign me up for lots of lorem ipsum ante ipsum primis in faucibus orco posuere cubilia Curae; Fusce scelerisque erat sit amet neque sit amet neque ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce scelerisque erat sit amet neque.</label>
+			<input id="checkbox_3" type="checkbox" name="subscribe" value="y" /><label for="checkbox_3" class="field-checkbox">Yes, please sign me up for lots of special deals on Viagara</label>
+		</fieldset>
+		<fieldset>
+
+		  <legend>Nearly Done!</legend>
+			<label>Click &#8220;Submit&#8221; below!</label>
+			<input type="submit" name="submit" value="SUBMIT" />
+			<input type="hidden" name="submitted" value="TRUE" />
+		</fieldset>
+	</form>
+
+</body>
+</html>

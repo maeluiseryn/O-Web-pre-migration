@@ -1,0 +1,26 @@
+<h1>Listing project_actions</h1>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Type d'action</th>
+    <th>Utilisateur</th>
+    <th>Résultat</th>
+    <th>Etat de l'action</th>
+    <th>Reference projet</th>
+    <th>Etat du projet</th>
+    <th></th>
+    <th></th>
+  <th></th>
+  </thead>
+
+
+  <%= render :partial => 'project_action_list' , :collection => @project_actions,
+                                                     :as=>:project_action %>
+
+</table>
+
+<br />
+
+<%= link_to 'Nouvelle action', new_project_project_action_path(params[:project_id]) %> |
+<%= link_to 'Retour', project_path(params[:project_id]) %>

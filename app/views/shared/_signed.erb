@@ -1,0 +1,4 @@
+<div id="sign_in_status" class="span-4  ">
+  <p>Connecté en tant que:  <%=current_user.name %> </p>
+  <%= link_to 'se déconnecter' ,:controller =>'sessions' ,:action =>'destroy' %>
+</div>

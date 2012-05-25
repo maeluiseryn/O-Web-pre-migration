@@ -1,0 +1,21 @@
+<h1>Liste des Clients de <%=@user.name %></h1>
+<%= will_paginate :previous_label=>'&larr; Précédent',:next_label=>'Suivant &rarr;' %>
+<table>
+  <thead>
+    <th>Titre</th>
+    <th>Prénom</th>
+    <th>Nom</th>
+    <th>Reference</th>
+    <th>Type de client</th>
+    <th>Entreprise</th>
+    <th>A des projets ?</th>
+    <th></th>
+    <th></th>
+  <th></th>
+  </thead>
+<%= render :partial => 'client_list',:collection => @clients ,:as=>:client %>
+</table>
+<%= will_paginate :previous_label=>'&larr; Précédent',:next_label=>'Suivant &rarr;' %>
+<br />
+
+<%= link_to 'Nouveau Client', new_client_path %>

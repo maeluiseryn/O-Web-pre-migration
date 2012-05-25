@@ -1,0 +1,113 @@
+<%= form_for(@service_apres_vente) do |f| %>
+  <% if @service_apres_vente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service_apres_vente.errors.count, "error") %> prohibited this service_apres_vente from being saved:</h2>
+
+      <ul>
+      <% @service_apres_vente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Nom:" %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label "Prénom:" %><br />
+    <%= f.text_field :surname %>
+  </div>
+
+
+<fieldset class="span-11">
+   <div class="field span-11">
+    <div class="span-10 milieu"  ><%= f.label "Demande reçue le     :"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= f.date_select :contact_date %></div>
+  </div>
+  <br />
+    <div class="field span-11">
+    <div class="span-3 milieu"><%= f.label "Formulaire envoyé?"%></div>
+    <div class="milieu">
+    <%= f.check_box :form_filled%></div>
+  </div>
+    <br>
+    <div class="field span-11"><div class="span-3">
+    <%= f.label "Formulaire complèté?"%></div>
+    <div class="span-3">
+    <%= f.check_box :form_completed%></div>
+  </div>
+
+   <div class="field span-11">
+    <div class="span-10 milieu"  ><%= f.label "Intervention prévue le:"%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.date_select :planned_intervention %></div>
+  </div>
+   </fieldset >
+    <div id="address" class="span-12">
+    <fieldset>
+
+
+    <legend><%= set_legend 'Addresse' %></legend>
+    <%= f.fields_for :addresses do |address_form| %>
+        <%= render 'shared/address_fields',:f=>address_form %>
+         <p><%= link_to_add_fields "Ajouter une adresse", f, :addresses %></p>
+     <% end %>
+
+
+   </fieldset>
+    </div>
+     <div id='contacts' class='span-12'>
+    <fieldset>
+    <legend><%= set_legend 'Contacts' %></legend>
+    <h4>Contact Principal</h4>
+    <% f.fields_for :contacts do |contact_form| %>
+        <% if params[:action]=='edit'%>
+        <%= render 'shared/contact_fields' ,:f=>contact_form%>
+           <% else%>
+
+        <%= render 'shared/contact_fields' ,:f=>contact_form%>
+     <% end %>
+    <p><%= link_to_add_fields "Ajouter un Contact", f, :contacts %></p>
+   <% end %>
+          </fieldset>
+    </div>
+    <div class="span-12" >
+       <fieldset>
+   <%= f.label :sav_type , "Type d'intervention" %>  <br>
+   <%= f.select :sav_type, get_sav_type   %> <br>
+   <%= f.label :invoice_number,'Numéro de Facture ' %><br>
+   <%= f.text_field :invoice_number %><br>
+  <div class="span-11" >
+    <table>
+     <thead>
+        <th></th>
+        <th>Contact</th>
+        <th>Resp. O-W avant</th>
+        <th>Resp. O-W après</th>
+
+      </thead>
+
+
+     <tr>
+        <td><strong>Sous garantie? </strong></td>
+        <td><%= f.select :war_client, options_for_select({"Non" => false, "Oui" => true})   %> </td>
+        <td><%= f.select :war_ow_bef, options_for_select({"Non" => false, "Oui" => true})  %> </td>
+        <td><%= f.select :war_ow_aft, options_for_select({"Non" => false, "Oui" => true}) %> </td>
+
+      </tr>
+
+    </table>
+   </div>
+   <br>
+   <%= f.label :sav_product_type,'Type de Produit: ' %><br>
+   <%= f.select :sav_product_type, get_component_type  %><br>
+   <%= f.label :sav_product_matter,'Matière: ' %><br>
+   <%= f.select :sav_product_matter, get_component_matter  %><br>
+   <%= f.label :sav_product_info,'Informations supplémentaires' %><br>
+   <%= f.text_area :sav_product_info %><br>
+       </fieldset>
+    </div>
+
+  <div class="actions span-12">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,90 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> Empeche ce client d'etre sauvé:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="field">
+    <%= f.label :titre ,'Titre' %><br>
+    <%= f.select(:titre, get_client_titre) %><br>
+</div>
+
+<div class="field">
+    <%= f.label :surname ,'Nom' %><br />
+    <%= f.text_field :surname %>
+</div>
+<div class="field">
+    <%= f.label :name ,'Prénom' %><br />
+    <%= f.text_field :name %>
+</div>
+<div class="field">
+    <%= f.label :reference ,'Connu par le biais de: '%><br />
+    <%= f.text_field :reference  %>
+</div>
+
+<div class="field">
+    <%= f.label :disponibility,'Disponibilitée: '%><br />
+    <%= f.text_field :disponibility  %>
+</div>
+<div class="field">
+    <%= f.label :client_type ,' Type de client'  %><br>
+    <%= f.select(:client_type, get_client_type) %><br>
+</div>
+<div class="field">
+    <%= f.label :society ,'Entreprise'%><br />
+    <%= f.text_field :society  %>
+</div>
+
+
+ <div id="address" class="span-12">
+    <fieldset>
+
+
+    <legend><%= set_legend 'Adresse' %></legend>
+     <h4>Addresse de Facturation</h4>
+     <%= f.fields_for :addresses do |address_form| %>
+        <%= render 'shared/address_fields_without_description',:f=>address_form %>
+     <% end %>
+     <p><%= link_to_add_fields "Ajouter une Adresse", f, :addresses %></p>
+   </fieldset>
+    </div> 
+
+
+  <div id='contacts' class='span-12'>
+    <fieldset>
+    <legend><%= set_legend 'Contacts' %></legend>
+    <h4>Contact Principal</h4>
+    <% f.fields_for :contacts do |contact_form| %>
+        <% if params[:action]=='edit'%>
+        <%= render 'shared/contact_fields' ,:f=>contact_form%>
+           <% else%>
+
+        <%= render 'shared/contact_fields' ,:f=>contact_form%>
+     <% end %>
+    
+   <% end %>
+      <p><%= link_to_add_fields "Ajouter un Contact", f, :contacts %></p>
+          </fieldset>
+    </div>
+    <div id='financial_data' class='span-12'>
+    <fieldset>
+
+    <legend><%= set_legend 'Donnée financiere' %></legend>
+
+      <%= f.fields_for :financial_data do |financial_data_form| %>
+
+        <%= render "financial_data_fields",:f=>financial_data_form %>
+     <% end %>
+
+</fieldset></div>
+  <div class="actions span-12">
+    <%= f.submit %>
+  </div>
+<% end %>

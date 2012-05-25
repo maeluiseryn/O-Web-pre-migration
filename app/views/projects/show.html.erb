@@ -1,0 +1,289 @@
+
+<div id="first_content">
+  <div class="span-18" style="min-height:50px"><div class="span-10"><h2>Projet: <%= @project.project_ref_string %></h2>
+  </div>
+  <div class="'span-6">
+    <div ><%= render :partial => 'assign_project' unless !current_user.is_admin? %></div>
+  </div>
+  </div>
+<hr>
+   <div id="project_info" class="span-8 ">
+
+    <p><b>Client: </b><%=link_to "#{@project.client.titre} #{@project.client.surname} #{@project.client.name}",client_path(@project.client_id) %>
+  </p>
+     <p><b>Type de projet: </b><%=@project.project_type%></p>
+    <p>
+      <b>Etat du projet: </b> <%=@project.aasm_current_state%>
+    </p>
+
+    <p><b>Creer le: </b><%=I18n.l(@project.created_at)%>
+    </p>
+    <p><b>Derniere modification: </b><%=I18n.l(@project.updated_at)%></p>
+
+  </div>
+
+
+<div id="price_info" class="span-8">
+<% if !@project.project_price.nil? %>
+     <p><b><%= link_to("Informations de facturation:", project_invoices_path(@project))%></b></p>
+     <p><b>Prix du projet: </b>
+  <%=@project.project_price%>€</p>
+      <p><b>Total des paiements: </b>
+  <%=get_already_paid_amount(@project)+get_payment_from_unfinished_invoices(@project) %>€</p>
+      <p><b>Solde du projet: </b>
+  <%#=@project.project_price-get_remaining_to_pay(@project)unless @project.project_price.nil?%>
+      <%= project_remaining_to_pay(@project) unless @project.project_price.nil?%>€
+      </p><%end %>
+  </div>
+<hr>
+
+</div>
+<% if !@project.remark.blank? %>
+ <div  class="span-18">
+   <p><b>Remarque:</b><br/>
+   <%=new_line_in_text(@project.remark)%></p>
+  </div>
+<% end %>
+<div id="project_price'"></div>
+
+<div class="span-18" id="addresses">
+  <h4><b>Adresse du chantier: </b></h4>
+<table>
+   <%= if !@project.address.nil? then render :partial => "shared/address_show" ,:object=> @project.address ,:as=>:address end%>
+</table>
+</div>
+<div class="span-18">
+     <h4><b>Informations Projet: </b></h4> 
+   <hr>
+  <div class="span-8">
+  <b><%=link_to_function("Informations de contact(#{size_collection @project.contacts})"," $('#contacts').toggle();")unless @project.contacts.empty? %></b><br/>
+  <b><%=link_to_function("Composants du projet(#{size_collection @project.project_components})"," $('#components').toggle();")unless @project.project_components.empty? %></b><br/>
+  <b><%=link_to_function("Fichiers(#{size_collection @project.uploaded_files})"," $('#files_table').toggle();")unless @project.uploaded_files.empty? %></b><br/>
+</div>
+<% if !@project.project_actions.empty? %>
+   <div class="span-8">
+      <b><%=link_to("Actions du projet:",project_project_actions_path(@project))%></b>
+     <ul style="list-style-type: none;">
+       <li><%=link_to_function("En cours(#{size_collection @project.project_actions.open})"," $('#open_action_table').toggle();")unless @project.project_actions.open.empty? %>
+</li>
+       <li><%=link_to_function("Clotûrées(#{size_collection @project.project_actions.success})"," $('#success_action_table').toggle();")unless @project.project_actions.success.empty? %>
+</li>
+       <li><%=link_to_function("Echec(#{size_collection @project.project_actions.failure})"," $('#failure_action_table').toggle();")unless @project.project_actions.failure.empty? %>
+</li>
+     </ul>
+   </div>
+<%end%>
+ </div>
+<div class='span-17'id="contacts" style="display:none">
+  <hr>
+ <h4><b>Informations de contact: </b></h4> 
+ <table>
+  <thead>
+
+           <th>Description</th>
+           <th>Type de contact</th>
+           <th>Donnée de contact</th>
+
+
+         </thead> 
+  <%= if !@project.contacts.empty? then render :partial => "shared/contact_list", :collection => @project.contacts ,:as=>:contact end%>
+ </table>
+
+</div>
+
+
+
+<div class='span-17' id="components" style="display:none">
+<hr>
+<h4><b>Composants du projet: </b></h4>  
+<table>
+  <thead>
+              
+              <th>Type de produit</th>
+              <th>Matière</th>
+              <th>Nombre de pieces </th>
+             <th>Informations complémentaires</th>
+
+              </thead>
+  <%= if !@project.project_components.empty? then render :partial => "project_component_list", :collection => @project.project_components,:as=>:project_component end%>
+</table>
+
+</div>
+
+<div class="span-17" id="files_table" style="display:none" >
+     <hr>
+     <h4><b>Fichiers:</b></h4>
+    <table class="span-17">
+
+              <thead>
+              <th></th>
+              <th>Nom du Fichier</th>
+              <th>Type de Fichier</th>
+              <th>Taille du Fichier</th>
+              <th>Propriétaire du Fichier</th>
+              <th>SlideShow</th>
+              <th></th>
+
+              </thead>
+
+<%=render :partial => "files/show_file", :collection => @project.uploaded_files,
+                                                     :as=>:uploaded %>
+</table>
+</div>
+
+
+<div class="span-17" id="open_action_table" style="display:none" >
+     <hr>
+     <h4><b>Actions en cours:</b></h4>
+
+      <table>
+        <thead>
+            <th>Description</th>
+            <th>Type d'action</th>
+            <th>Utilisateur</th>
+            <th>Résultat</th>
+            <th>Etat de l'action</th>
+            <th>Reference projet</th>
+            <th>Etat du projet</th>
+            <th></th>
+            <th></th>
+          <th></th>
+          </thead>
+
+
+
+ <%= render :partial => 'project_actions/project_action_list' , :collection => @project.project_actions.open,
+                                                     :as=>:project_action %>
+</table>
+</div>
+
+
+<div class="span-17" id="success_action_table" style="display:none" >
+     <hr>
+     <h4><b>Actions Cloturées:</b></h4>
+
+      <table>
+        <thead>
+            <th>Description</th>
+            <th>Type d'action</th>
+            <th>Utilisateur</th>
+            <th>Résultat</th>
+            <th>Etat de l'action</th>
+            <th>Reference projet</th>
+            <th>Etat du projet</th>
+            <th></th>
+            <th></th>
+          <th></th>
+          </thead>
+
+
+
+ <%= render :partial => 'project_actions/project_action_list' , :collection => @project.project_actions.success,
+                                                     :as=>:project_action %>
+</table>
+</div>
+
+<div class="span-17" id="failure_action_table" style="display:none" >
+     <hr>
+     <h4><b>Actions ratées:</b></h4>
+
+      <table>
+        <thead>
+            <th>Description</th>
+            <th>Type d'action</th>
+            <th>Utilisateur</th>
+            <th>Résultat</th>
+            <th>Etat de l'action</th>
+            <th>Reference projet</th>
+            <th>Etat du projet</th>
+            <th></th>
+            <th></th>
+          <th></th>
+          </thead>
+        
+
+
+ <%= render :partial => 'project_actions/project_action_list' , :collection => @project.project_actions.failure,
+                                                     :as=>:project_action %>
+</table>
+</div>
+
+
+
+<% content_for :sidebar do %>
+    
+    <div id="vertmenu">
+      <ul>
+
+
+     <li>
+<%= link_to'Explorer les fichiers' ,project_files_path(@project),:tabindex=>"1" %>
+       </li>
+        <li>
+         <%=  link_to 'Uploader un fichier', upload_files_path(:format=>:js),:remote=>true,:tabindex=>'2'%>
+        </li>
+       <%# <li>
+       = link_to'Uploader' ,:controller =>'projects' ,:action=>'upload_a_file',:tabindex=>'2'</li>%>
+        <% if !@project.message_box.nil?%>
+         <li>
+    <%= (link_to 'Messages  ',message_box_path(@project.message_box.id ),:tabindex=>'3') %>
+      </li>
+        <% end %>
+        <li>
+<%= link_to('Fiche de RDV' ,fiche_de_rendez_vous_path(@project),:target=>'_blank',:tabindex=>'4')%>
+       </li>
+<li>
+<%= link_to'Fiche de RDV en pdf ' ,fiche_de_rendez_vous_path(@project,:format=>'pdf'),:tabindex=>'5'%>
+       </li>
+        <li>
+<%= link_to'Fiche de RDV par mail ' ,fiche_de_rendez_vous_mail_path(@project),:tabindex=>'6'%>
+       </li>
+        <li>
+<%= link_to'Formulaire SAV par mail ' ,send_SAV_form_mail_path(@project),:tabindex=>'7'%>
+       </li>
+<%if !@project.project_price.nil? %>
+<li>
+<%= link_to'Factures du projet' , project_invoices_path(@project) %>
+       </li>
+<%end%>
+<%if @project.aasm_current_state ==:placement%>
+  <li>
+<%= link_to'Fermer projet' , close_project_path(@project),:tabindex=>'10'%>
+       </li>
+<%end%>
+<%if @project.project_price.nil? && @project.aasm_current_state!=:project_lost %>
+        <li>
+<%= link_to'Projet perdu' , lost_project_path(@project),:tabindex=>'10'%>
+       </li>
+<%end%>
+
+       <% if !already_associated(@project) %>
+        <li>
+      <%= (link_to 'Suivre projet ',follow_project_path(@project),:tabindex=>'11')  %>
+      </li>
+        <%end%>    
+       <% if  @project.aasm_current_state == :offer %>
+         <%#<li>
+           <%= link_to 'Projet accepter ',set_project_price_path(@project),:tabindex=>'12'
+      </li>%>
+         <li>
+      <%= link_to 'Projet accepté ',set_project_price_path(@project,:format=>:js),:remote=>true,:tabindex=>'12' %>
+      </li>
+        <%end%>
+         <li>
+      <%= link_to 'Nouvelle action ',new_project_project_action_path(@project) %>
+      </li>
+        <li><%= link_to 'Modifier', edit_project_path(@project)  %>
+        </li>
+        <li><%= link_to 'Retour', client_path(@project.client_id) %></li>
+      </ul>
+    </div>
+
+
+
+     <div id= "options_link"><%#= link_to 'Options', upload_files_path(:format=>:js),:remote=>true %></div>
+
+
+<% end%>
+
+

@@ -1,0 +1,57 @@
+<% if !@project.nil? %>
+<div class="span-18" style="min-height:50px"><h2>Factures du projet: <%=" "+@project.project_ref_string%> </h2></div>
+
+<%else%>
+<div class="span-18" style="min-height:50px"><h2>Liste des factures</h2></div>
+
+<% end %>
+<hr>
+<% if @invoices.empty? %>
+<h4 align="center"> Aucune facture emises</h4>
+<% else %>
+<table>
+  <thead>
+    <th>Projet</th>
+    <th>Référence facture</th>
+    <th>Somme Total</th>
+    <th>Echeance</th>
+    <th>Solde</th>
+    <th>Date de création</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </thead>
+
+
+  <%= render :partial => 'invoice_list' ,:collection=>@invoices ,:as=>:invoice %>
+
+</table>
+<% if !@project.nil? %>
+<br/>
+
+<h4><b> Somme restante a payer:</b> <%=project_remaining_to_pay(@project)   %>€</h4>
+    <%end%>
+<% end%>
+<br />
+<% content_for :sidebar do %>
+<div id="vertmenu">
+      <ul id="sidebarmenu1">
+       <% if !@project.nil? %>
+       <% if !project_remaining_to_pay_equal_zero(@project) %>
+       <li>
+          <%= link_to 'Nouvelle Facture', new_project_invoice_path(@project) %>
+       </li>
+        <%end%>
+        <li>
+        <%= link_to 'Retour au projet', project_path(@project) %>
+       </li>
+       <%else%>
+         <li>
+        <%= link_to 'Retour ', user_path(current_user) %>
+       </li>
+       <% end %>
+       </ul>
+    </div>
+<% end%>
+
+

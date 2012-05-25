@@ -1,0 +1,99 @@
+<br />
+<div class="span-11" id="search_page">
+
+<div id='searchoption'>
+<% if params[:model_type].nil? %>
+<div class="valign span-4">  Rechercher un ? &nbsp</div>
+<div class="span-5">
+<%= select_tag :model_type ,
+               options_for_select(model_list
+                )%>
+</div>
+<%else%>
+  <%= hidden_field_tag :model_type ,params[:model_type] %>
+  <%=link_for_model_options_search params[:model_type] %>
+ <%end%>
+
+<div id="client">
+<div class="valign span-4">
+Type de Client:
+</div>
+<div class="span-4">
+  <%= select_tag :client_type ,
+               options_for_select(client_type
+                )%>
+</div>
+<div class="valign span-4">
+Etat du Client:
+</div>
+<div class="span-4">
+  <%= select_tag :client_state ,
+               options_for_select(client_state
+                )%>
+</div>
+</div>
+<div id="project">
+<div class="valign span-4">  Type de Projet:</div>
+<div class="span-4">  <%= select_tag :project_type ,
+               options_for_select(project_type
+                )%></div>
+<div class="valign span-4">Etat du Projet:</div>
+  <div class="span-4"> <%= select_tag :project_state ,
+               options_for_select(project_state
+                )%></div>
+
+</div>
+
+<div id="uploadedfiles">
+
+</div>
+<div id="address">
+
+</div>
+<div id='contact'>
+<div class="valign span-4">
+  Type de Contact:</div>
+  <div class="span-4">
+
+<%= select_tag :contact_type ,
+               options_for_select(contact_type
+                )%>
+</div>
+</div>
+
+<div id="time">
+<div class="valign span-4">
+ Rechercher un modele:
+</div>
+ <div class=" span-4" id="time_type">
+ <%= select_tag :time_type ,
+               options_for_select(time_type
+                )%>
+ </div>
+<div class="valign span-4">
+ il y a moins de
+</div>
+<div class=" span-4">
+<%= select_tag :time_number, options_for_select(1..30
+                )%>
+<%= select_tag :time ,
+               options_for_select(created
+                )%>
+</div>
+ <div class='valign span-2'>
+<%=link_to_function('Cacher','$("#time").hide(); $("#time").children().attr("disabled", true);  $("#optiontemps").show();$("#time_opt:hidden").val(0);')%>
+</div>
+
+
+</div>
+<div id="general">
+<div class="valign span-4">Résultats par pages:</div><div class=" span-4 "> <%= select_tag :per_page ,
+               options_for_select(per_page_result
+                )%></div>
+  <div class='valign span-2'>
+<%=link_to_function('Cacher','$("#general").hide(); $("#general").children().attr("disabled", true);  $("#optiongeneral").show();$("#gen_opt:hidden").val(0);')%>
+</div>
+</div>
+
+</div>
+</div>

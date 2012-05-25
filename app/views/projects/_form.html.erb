@@ -1,0 +1,64 @@
+<%= form_for @project do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> Erreurs empèche ce Projet d'être sauvé:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="field">
+    <%= f.label :project_type,'Type de projet' %><br />
+    <%= f.select( :project_type, get_project_type) %>
+  </div>
+
+ <div id="address" class="span-12">
+    <fieldset>
+
+
+    <legend><%= set_legend 'Addresse' %></legend>
+    <%= f.fields_for :address do |address_form| %>
+        <%= render 'shared/address_fields',:f=>address_form %>
+     <% end %>
+     
+   </fieldset>
+    </div>
+    
+      <div id='contacts' class='span-12'>
+       <fieldset>
+        <legend><%= set_legend 'Contacts' %></legend>
+        <% f.fields_for :contacts do |contacts_form| %>
+            <%= render 'shared/contact_fields' ,:f=>contacts_form%>
+         <% end %>
+        <p><%= link_to_add_fields "Ajouter Contact", f, :contacts %></p>
+       </fieldset>
+     </div>
+
+     <div class="field">
+   <%=  f.hidden_field :client_id , :value => @project.client_id%>
+  </div>
+
+ <div id="project_component" class="span-12">
+    <fieldset>
+
+
+    <legend><%= set_legend 'Composant du projet' %></legend>
+   <% f.fields_for :project_components do |project_component| %>
+            <%= render 'shared/project_component_fields' ,:f=>project_component%>
+         <% end %>
+       <p><%= link_to_add_fields "Ajouter  Composant", f, :project_components %></p>
+      </fieldset>
+   </div>
+   <div class="span-15">
+     <%= f.label :remark,'Remarque particuliere' %><br>
+     <%=f.text_area :remark %>
+   </div>
+    <div class="actions span-15">
+    <%= f.submit %>
+  </div>
+
+<% end %>
